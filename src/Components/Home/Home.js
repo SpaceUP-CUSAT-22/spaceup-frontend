@@ -1,5 +1,5 @@
 import "./Home.css";
-import {useState, useEffect} from 'react';
+import {Link} from 'react-router-dom';
 import btn_bg from "../../Assets/btn-bg.svg";
 import Typewriter from "typewriter-effect";
 
@@ -20,8 +20,10 @@ const Home = () => {
                         </h1>
                     <p className="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p>
                     {/* <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" className="glightbox play-btn mb-4"></a> */}
-                    <a href="#about" className="about-btn scrollto">
-                        <img src={btn_bg} alt=""/><span>Register Now</span></a>
+                    <Link to="/login" className="about-btn scrollto">
+                        <img src={btn_bg} alt=""/>
+                        <span>Register Now</span>
+                    </Link>
                 </div>
             </section>
         </>

@@ -1,16 +1,32 @@
 import "./Navbar.css";
-
+import fb_icon from "../../Assets/fb-icon.png";
+import instagram_icon from "../../Assets/instagram-icon.png";
+import linkedin_icon from "../../Assets/linkedin-icon.png";
 import logo from "../../Assets/space_up-logo.png";
+import {useEffect, useState} from "react";
 
 const Navbar = () => {
   const navItems = ["Home", "About", "SSS", "Events", "Milestone", "Team", "Speakers", "Gallery"];
 
+  const [state, setState] = useState(true); 
+  useEffect(() => { 
+    window.addEventListener("scroll", () => {
+        window.onscroll = function() {
+            if (window.pageYOffset > 20) {
+                setState(false);
+            } else {
+                setState(true);
+            }
+        };
+    });
+
+    }, []);
   return (
     <>
       <header id="header" className="d-flex align-items-center ">
-        <div className="container-fluid container-xxl d-flex align-items-center">
+        <div className="nav-parent">
 
-          <div id="logo" className="me-auto">
+          <div id="logo" className="">
             <a href="index.html" className="scrollto">
               <img src={logo} className="" alt="" />
             </a>
@@ -28,6 +44,13 @@ const Navbar = () => {
 
             <i className="bi bi-list mobile-nav-toggle"></i>
           </nav>
+
+          <div className="social-media">
+            <img src={fb_icon} alt="fb_icon" />
+            <img src={instagram_icon} alt="instagram_icon" />
+            <img src={linkedin_icon} alt="linkedin_icon" />
+            
+          </div>
           
         </div>
       </header>
@@ -38,7 +61,7 @@ const Navbar = () => {
 export default Navbar;
 
 const DropDown = ({index}) => {
-  const dropItems = ["drop1", "drop2", "drop3", "drop4"];
+  const dropItems = ["Event Chart", "Flagship Event"];
   
   if(index === 3) {
     return (
