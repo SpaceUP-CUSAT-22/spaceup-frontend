@@ -26,7 +26,7 @@ const About = () => {
 };
 
 const para = [
-  "IRES SEDS CUSAT is a community of undergraduate students from CUSAT who have come together to make opportunities out of the possibilities that are beyond the perimeters of earth. We aim to take knowledge down the path of imagination. To uphold this vision and idea of ours we come together as a community to administer seminars, forums, and outreach programs to break you f rom the monotonous way of learning. We present the battle of minds both at the national and international level for college and school students and assist them in networking within space industries. Here memories are created with dreams not dependent on the stars falling in the night sky. We bring to you our unconference SPACEUP CUSAT 2022.",
+  "Some of us gaze at the night sky and contemplate the vast universe and seek answers to the questions that one day might become inventive ideas. This is a place for them. A platform where like-minded Astrophiles can gather and discuss multiple possibilities and even the anomaly of space. An event put together with all the opportunities together, aiming for both fun and learning to be presented in an integrated manner. Workshops for learning skills and inventing ideas, seminars to enlighten the mind, interactive sessions to discuss space within the enthusiasts, and a lot more. SPACE UP CUSAT has the potential to provide the attendees a glimpse into what’s happening in the space industry and encourage them to explore, ask questions and learn.",
 ];
 
 export default About;
