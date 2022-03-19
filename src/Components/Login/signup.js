@@ -1,6 +1,6 @@
 import "./login.css";
 
-const Login = () => {
+const Signup = () => {
   return (
     <>
       <div classNameName="parent">
@@ -46,16 +46,12 @@ const Login = () => {
                         type="submit"
                         className="form-control btn btn-primary submit px-3"
                       >
-                        Login
+                        Sign In
                       </button>
                     </div>
                     <div className="form-group d-md-flex">
                       <div className="w-50">
-                        <label className="checkbox-wrap checkbox-primary">
-                          Remember Me
-                          <input type="checkbox" checked />
-                          <span className="checkmark"></span>
-                        </label>
+                     
                       </div>
                       
                     </div>
@@ -86,4 +82,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;
