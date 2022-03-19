@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 .parent {
+  padding: 8rem 0 4rem;
   background-color: transparent;
   background-size: cover;
   overflow: hidden;
   position: relative;
   color: white;
-  padding: 60px 0 40px 0;
 }
+
 .pic img {
   width: 90%;
   height: 90%;
