@@ -55,7 +55,7 @@
   }
   
   #hero h1 span {
-    color: #f82249;
+    color: white;
   }
   
   @media (max-width: 991px) {
@@ -216,3 +216,57 @@
     width: 100%;
     z-index: 2;
   }
+
+/* $bg: #1d1f20;
+$text-color: #d7b94c;
+$caret-color: white;
+$text-length: 16;
+$animation-time: 4s; */
+
+/* // Center content
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: $bg;
+}
+// Basic style
+h1 {
+  font-family: 'Inconsolata', Consolas, monospace;
+	font-size: 4em;
+	color: $text-color;
+}
+// Typing style */
+
+/* .typing {
+  position: relative;
+	
+}
+
+.typing::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  color: #d7b94c;
+  background:  #1d1f20;
+  animation: typing 4s steps(16) forwards,
+    caret 1s infinite;
+}
+
+
+@keyframes typing {
+	to { width: 0 }
+}
+@keyframes caret {
+	50% { color: transparent }
+} */
+
+.typing {
+  color: white !important;
+}
+
+.Typewriter__cursor {
+  display: none;
+}

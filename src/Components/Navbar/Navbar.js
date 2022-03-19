@@ -26,7 +26,7 @@ const Navbar = () => {
 
             <i className="bi bi-list mobile-nav-toggle"></i>
           </nav>
-          <a className="buy-tickets scrollto" href="#buy-tickets">Buy Tickets</a>
+          {/* <a className="buy-tickets scrollto" href="#buy-tickets">Buy Tickets</a> */}
 
         </div>
       </header>
