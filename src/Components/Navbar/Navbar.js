@@ -1,9 +1,8 @@
 import "./Navbar.css";
-import { useState } from 'react';
+
 import logo from "../../Assets/space_up-logo.png";
 
 const Navbar = () => {
-  const [drop, setDrop] = useState(true);
   const navItems = ["Home", "About", "SSS", "Events", "Milestone", "Team", "Speakers", "Gallery"];
 
   return (

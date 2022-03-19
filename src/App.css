@@ -20,3 +20,18 @@ h1, h2, h3, h4, h5, h6 {
 .main-page {
   margin-top: 70px;
 }
+
+/*  styling scrollbars  */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4d8ad9;
+  border-radius: 10px;
+}
