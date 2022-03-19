@@ -22,7 +22,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar]);
 const Gallery = () => {
   return (
     <>
-      <div className="gallery-parent">
+      <div className="gallery-parent" id="gallery">
         <div className="container" data-aos="fade-up">
           <div className="section-header">
             <h2>Gallery</h2>
