@@ -30,17 +30,54 @@
 
 .shoot-star {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 90px;
   height: 90px;
   z-index: 0;
-  animation: shootStar 4s ease-out 1;
 }
 
-@keyframes shootStar {
+.star-1 {
+  animation: star1 4s ease-out infinite;
+  top: 0;
+  left: 0;
+}
+
+@keyframes star1 {
   from {
-    transform: translate(0, 0) scale(0);
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(600px, 300px);
+    opacity: 0;
+  }
+}
+
+.star-2 {
+  animation: star2 4s ease-out 6s infinite;
+  top: 0;
+  right: 0;
+}
+
+@keyframes star2 {
+  from {
+    transform: translate(0, 0) rotate(110deg);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-600px, 300px) rotate(110deg);
+    opacity: 0;
+  }
+}
+
+.star-3 {
+  animation: star3 4s ease-out 7s infinite;
+  top: 0;
+  left: 30%;
+}
+
+@keyframes star3 {
+  from {
+    transform: translate(0, 0);
     opacity: 1;
   }
   to {
