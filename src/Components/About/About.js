@@ -10,7 +10,7 @@ const About = () => {
             <p>{para[0]}</p>
           </div>
           <div className="row">
-            <div className=" col-lg-6">
+            <div className="col-lg-6">
               <h2>Our Mission</h2>
               <p>{para[1]}</p>
             </div>

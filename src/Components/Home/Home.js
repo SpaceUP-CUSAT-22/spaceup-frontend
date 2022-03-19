@@ -13,7 +13,7 @@ const Home = () => {
                         <Typewriter
                             onInit={(typewriter) => {
                                 typewriter
-                                .typeString("SPACE-UP CUSAT<br>2022")
+                                .typeString("SPACE-UP CUSAT<br/>2022")
                                 .start();
                             }}
                         />
