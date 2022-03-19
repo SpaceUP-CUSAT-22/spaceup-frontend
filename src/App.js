@@ -7,7 +7,6 @@ import Login from "./Components/Login/login";
 import Signup from "./Components/Login/signup";
 
 
-
 /* --------------------------------------------------
   Import Components in the Main.js file 
   ---------------------------------------------------*/

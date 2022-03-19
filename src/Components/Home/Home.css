@@ -48,16 +48,16 @@
 }
 
 #home h1 {
-  color: #fff;
-  font-family: "Raleway", sans-serif;
-  font-size: 56px;
-  font-weight: 600;
-  text-transform: uppercase;
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+  font-size: 5rem;
+  font-family: 'nasamedium';
+  letter-spacing: 8px;
 }
 
-#home h1 span {
+/* #home h1 span {
   color: white;
-}
+} */
 
 @media (max-width: 991px) {
   #home h1 {
@@ -149,7 +149,6 @@
 }
 
 #home .about-btn {
-  font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -264,7 +263,7 @@ h1 {
 } */
 
 .typing {
-  color: white !important;
+  color: white;
 }
 
 .Typewriter__cursor {

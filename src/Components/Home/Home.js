@@ -13,13 +13,12 @@ const Home = () => {
                         <Typewriter
                             onInit={(typewriter) => {
                                 typewriter
-                                .typeString("SPACE-UP CUSAT <br/> 2021")
+                                .typeString("SPACE-UP CUSAT<br>2022")
                                 .start();
                             }}
                         />
                         </h1>
-                    <p className="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p>
-                    {/* <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" className="glightbox play-btn mb-4"></a> */}
+                    <p className="mb-0 pb-0">Pre-event on 3rd April 2022, Venue Seminar complex</p>
                     <Link to="/login" className="about-btn scrollto">
                         <img src={btn_bg} alt=""/>
                         <span>Register Now</span>
