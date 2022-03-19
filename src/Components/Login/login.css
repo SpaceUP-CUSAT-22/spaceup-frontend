@@ -8333,7 +8333,9 @@
     font-size: 15px;
     text-transform: uppercase; }
     .btn:hover, .btn:active, .btn:focus {
-      outline: none; }
+      outline: none;
+      transform: translateY(5px);
+      }
     .btn.btn-primary {
       background: #f36e2c !important;
       border: 1px solid #f36e2c !important;
@@ -8341,6 +8343,7 @@
       .btn.btn-primary:hover {
         border: 1px solid #f36e2c;
         background: transparent;
+        transform: scale(1.1); 
         color: #f36e2c; }
       .btn.btn-primary.btn-outline-primary {
         border: 1px solid #f36e2c;
@@ -8351,3 +8354,5 @@
           background: #f36e2c;
           color: #fff; }
   
+
+        
