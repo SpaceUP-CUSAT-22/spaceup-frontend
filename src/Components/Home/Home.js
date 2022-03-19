@@ -3,9 +3,6 @@ import {useState, useEffect} from 'react';
 import btn_bg from "../../Assets/btn-bg.svg";
 import Typewriter from "typewriter-effect";
 
-
-
-
 const Home = () => {
 
     return (
