@@ -39,3 +39,20 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+@media screen and (max-width: 690px) {
+    .milestone-parent {
+        width: 60%;
+    }
+
+    .milestone-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mile-card-text {
+        width: calc(100%);
+        padding: 0;
+        text-align: center;
+    }
+}
