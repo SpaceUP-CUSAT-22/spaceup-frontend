@@ -7,8 +7,8 @@ const Home = () => {
 
     return (
         <>
-            <section id="hero">
-                <div className="hero-container" data-aos="zoom-in" data-aos-delay="100">
+            <section id="home">
+                <div className="home-container" data-aos="zoom-in" data-aos-delay="100">
                     <h1 className="typing mb-4 pb-0">
                         <Typewriter
                             onInit={(typewriter) => {

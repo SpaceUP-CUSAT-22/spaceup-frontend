@@ -3,6 +3,7 @@ import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Gallery from "./Components/Gallery/Gallery";
 
+
 const Main = () => {
     return (
         <>
@@ -10,6 +11,7 @@ const Main = () => {
             <Home />
             <About />
             <Gallery />
+            
         </>
     );
 }

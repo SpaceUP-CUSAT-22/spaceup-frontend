@@ -4,6 +4,7 @@ import instagram_icon from "../../Assets/instagram-icon.png";
 import linkedin_icon from "../../Assets/linkedin-icon.png";
 import logo from "../../Assets/space_up-logo.png";
 import {useEffect, useState} from "react";
+import {Link} from "react-scroll";
 
 const Navbar = () => {
   const navItems = ["Home", "About", "SSS", "Events", "Milestone", "Team", "Speakers", "Gallery"];
@@ -28,7 +29,7 @@ const Navbar = () => {
         <div className="nav-parent">
 
           <div id="logo" className="">
-            <a href="" className="scrollto">
+            <a href="/" className="scrollto">
               <img src={logo} className="" alt="" />
             </a>
           </div>
@@ -37,7 +38,7 @@ const Navbar = () => {
             <ul>
               {navItems.map((item, index) => (
                 <li className="dropdown">
-                  <a className="nav-link scrollto" href="">{item}</a>
+                  <Link className="nav-link scrollto" to={item.toLowerCase()}>{item}</Link>
                   <DropDown index={index}/>
                 </li>
               ))}
@@ -69,7 +70,7 @@ const DropDown = ({index}) => {
     <>
       <ul>
         {dropItems.map((item) => (
-          <li><a href="#">{item}</a></li>
+          <li><a href="/">{item}</a></li>
         ))}
       </ul>
       

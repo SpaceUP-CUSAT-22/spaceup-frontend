@@ -20,6 +20,7 @@ function App() {
         <Switch>
             <Route exact path="/" component={Main} />
             <Route path="/login" component={Login} />
+            
             {/* <Route component={Error}/> */}
         </Switch>
       </Router>
