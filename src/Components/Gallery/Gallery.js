@@ -31,8 +31,8 @@ const Gallery = () => {
         </div>
 
         <Swiper
-          spaceBetween={50}
-          slidesPerView={5}
+          spaceBetween={40}
+          slidesPerView={4}
           navigation
           pagination={{ clickable: true }}
           onSlideChange={() => console.log("slide change")}
