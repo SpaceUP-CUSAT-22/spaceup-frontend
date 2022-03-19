@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./Components/Login/login";
 import Signup from "./Components/Login/signup";
+import Reg from "./Components/Registration/reg"
 
 /* --------------------------------------------------
   Import Components in the Main.js file 
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/" component={Main} />
           <Route path="/login" component={Login} />
           <Route path="/signup" component={Signup} />
+          <Route path="/reg" component={Reg} />
           {/* <Route component={Error}/> */}
         </Switch>
       </Router>
