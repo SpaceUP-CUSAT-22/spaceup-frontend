@@ -5,6 +5,11 @@
     position: relative;
     padding-bottom: 20px;
   }
+
+  .scrolled {
+    background-color: rgba(6, 12, 34, 0.98);
+    margin-top: -10px;
+  }
   
   .section-header::before {
     content: '';
@@ -326,6 +331,8 @@
   align-items: center;
   justify-content: space-between;
 }
+
+
 
 #logo a img {
   width: 116.52px;

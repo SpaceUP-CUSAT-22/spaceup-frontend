@@ -9,6 +9,7 @@ const Navbar = () => {
   const navItems = ["Home", "About", "SSS", "Events", "Milestone", "Team", "Speakers", "Gallery"];
 
   const [state, setState] = useState(true); 
+
   useEffect(() => { 
     window.addEventListener("scroll", () => {
         window.onscroll = function() {
@@ -23,11 +24,11 @@ const Navbar = () => {
     }, []);
   return (
     <>
-      <header id="header" className="d-flex align-items-center ">
+      <header id="header" className={(state) ? "d-flex align-items-center" : "d-flex align-items-center scrolled"}>
         <div className="nav-parent">
 
           <div id="logo" className="">
-            <a href="index.html" className="scrollto">
+            <a href="" className="scrollto">
               <img src={logo} className="" alt="" />
             </a>
           </div>
