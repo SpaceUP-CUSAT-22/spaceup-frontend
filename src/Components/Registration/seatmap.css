@@ -1,0 +1,21 @@
+.booking_seat {
+    background-color: black;
+}
+
+.button_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.book_now_btn {
+  background: #f36f2d;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2px;
+  border: none;
+}
+
+.book_now_btn:hover {
+  background: #ed5e17;
+}
