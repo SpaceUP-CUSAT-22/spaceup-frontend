@@ -1,11 +1,14 @@
 .gallery-parent {
   padding: 60px;
   overflow: hidden;
-  background-image: url(../../Assets/gallery-bg.jpg);
-  background-size: contain;
+  backdrop-filter: blur(10px);
 }
 .section-header h2 {
   color: white;
+}
+.section-header p {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 .swiper-pagination {
   margin-top: 20px;
