@@ -3,11 +3,6 @@
   overflow: hidden;
 }
 
-.gallery-lightbox {
-  width: 100px;
-  height: 100px;
-}
-
 .swiper-pagination {
   margin-top: 20px;
   position: relative;
