@@ -5,10 +5,12 @@ import Typewriter from "typewriter-effect";
 
 
 
+
 const Home = () => {
 
     return (
         <>
+       
             <section id="hero">
                 <div className="hero-container" data-aos="zoom-in" data-aos-delay="100">
                     <h1 className="typing mb-4 pb-0">
