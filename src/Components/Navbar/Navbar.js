@@ -11,7 +11,9 @@ const Navbar = () => {
         <div className="container-fluid container-xxl d-flex align-items-center">
 
           <div id="logo" className="me-auto">
-            <a href="index.html" className="scrollto"><img src={logo} alt="" /></a>
+            <a href="index.html" className="scrollto">
+              <img src={logo} className="" alt="" />
+            </a>
           </div>
 
           <nav id="navbar" className="navbar order-last order-lg-0">
@@ -26,8 +28,7 @@ const Navbar = () => {
 
             <i className="bi bi-list mobile-nav-toggle"></i>
           </nav>
-          {/* <a className="buy-tickets scrollto" href="#buy-tickets">Buy Tickets</a> */}
-
+          
         </div>
       </header>
     </>
