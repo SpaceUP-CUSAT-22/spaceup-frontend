@@ -1,7 +1,7 @@
 import "./login.css";
 import { Link } from "react-router-dom";
 
-const Login = () => {
+const Signup = () => {
   return (
     <>
       <div classNameName="parent">
@@ -9,14 +9,16 @@ const Login = () => {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-6 text-center mb-5">
-                <h2 className="heading-section">Login</h2>
+                <h2 className="heading-section">SignUp</h2>
               </div>
             </div>
 
             <div className="row justify-content-center">
               <div className="col-md-6 col-lg-4">
                 <div className="login-wrap p-0">
-                  <h3 className="mb-4 text-center">Have an account?</h3>
+                  <h3 className="mb-4 text-center">Create an account?</h3>
+
+
 
                   <form action="#" className="signin-form">
                     <div className="form-group">
@@ -41,20 +43,40 @@ const Login = () => {
                       ></span>
                     </div>
                     <div className="form-group">
+                      <input
+                        id="password-field"
+                        type="password"
+                        className="form-control"
+                        placeholder="Confirm-Password"
+                        required
+                      />
+                      <span
+                        toggle="#password-field"
+                        className="fa fa-fw fa-eye field-icon toggle-password"
+                      ></span>
+                    </div>
+                    <div className="form-group">
                       <button
                         type="submit"
                         className="form-control btn btn-primary submit px-3"
                       >
-                        Login
+                        Sign Up
                       </button>
                     </div>
                     <div className="form-group d-md-flex">
-                      <div className="w-50"></div>
+                      <div className="w-50">
+                     
+                      </div>
+                      
                     </div>
                   </form>
 
+
+
+
+
                   <p className="w-100 text-center">
-                    <Link to="/signup">&mdash; Sign Up &mdash;</Link>
+                   <Link to="/login" >&mdash;  Log In  &mdash;</Link>
                   </p>
                   {/* <div className="social d-flex text-center">
                     <a href="/" className="px-2 py-2 mr-md-1 rounded">
@@ -64,6 +86,8 @@ const Login = () => {
                       <span className="ion-logo-twitter mr-2"></span> Twitter
                     </a>
                   </div> */}
+
+                  
                 </div>
               </div>
             </div>
@@ -74,4 +98,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;

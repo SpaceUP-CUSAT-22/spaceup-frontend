@@ -1,0 +1,41 @@
+.milestone-parent {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.milestone-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.milestone-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mile-card-img {
+    width: 170px;
+    height: 240px;
+    clip-path: polygon(40% 0, 100% 0, 100% 80%, 60% 100%, 0 100%, 0% 60%, 0 20%);
+}
+
+.mile-card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.mile-card-text {
+    width: calc(100% - 170px);
+    padding: 0 20px 0 20px;
+}
+
+@media screen and (max-width: 1360px) {
+    .milestone-parent {
+        width: 600px;
+    }
+
+    .milestone-body {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
