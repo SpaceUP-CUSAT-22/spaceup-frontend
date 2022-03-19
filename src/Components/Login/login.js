@@ -1,4 +1,5 @@
 import "./login.css";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -16,8 +17,6 @@ const Login = () => {
               <div className="col-md-6 col-lg-4">
                 <div className="login-wrap p-0">
                   <h3 className="mb-4 text-center">Have an account?</h3>
-
-
 
                   <form action="#" className="signin-form">
                     <div className="form-group">
@@ -50,32 +49,21 @@ const Login = () => {
                       </button>
                     </div>
                     <div className="form-group d-md-flex">
-                      <div className="w-50">
-                        <label className="checkbox-wrap checkbox-primary">
-                          Remember Me
-                          <input type="checkbox" checked />
-                          <span className="checkmark"></span>
-                        </label>
-                      </div>
-                      
+                      <div className="w-50"></div>
                     </div>
                   </form>
 
-
-
-
-
                   <p className="w-100 text-center">
-                    &mdash; Or Sign In With &mdash;
+                    <Link to="/signup">&mdash; Sign Up &mdash;</Link>
                   </p>
-                  <div className="social d-flex text-center">
+                  {/* <div className="social d-flex text-center">
                     <a href="/" className="px-2 py-2 mr-md-1 rounded">
                       <span className="ion-logo-facebook mr-2"></span> Facebook
                     </a>
                     <a href="/" className="px-2 py-2 ml-md-1 rounded">
                       <span className="ion-logo-twitter mr-2"></span> Twitter
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
