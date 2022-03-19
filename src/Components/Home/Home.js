@@ -19,15 +19,23 @@ const Home = () => {
                         />
                         </h1>
                     <p className="mb-0 pb-0">Pre-event on 3rd April 2022, Venue Seminar complex</p>
-                    <Link to="/login" className="about-btn scrollto">
-                        <img src={btn_bg} alt=""/>
-                        <span>Register Now</span>
-                    </Link>
+                    <Button name="Register Now" route="/login"/>
                 </div>
             </section>
         </>
     );
 
+}
+
+export const Button = ({name, route}) => {
+return(
+    <>
+        <Link to={route} className="about-btn scrollto">
+            <img src={btn_bg} alt=""/>
+            <span>{name}</span>
+        </Link>
+    </>
+);
 }
 
 export default Home;

@@ -15,7 +15,10 @@
 .milestone-body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 60px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .milestone-card {
@@ -37,6 +40,17 @@
 .mile-card-text {
     width: calc(100% - 170px);
     padding: 0 20px 0 20px;
+}
+
+.mile-card-text h2 {
+    font-family: 'nasamedium';
+    color: white;
+}
+
+.mile-card-text p {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 @media screen and (max-width: 1360px) {
