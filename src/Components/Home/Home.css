@@ -4,7 +4,7 @@
   #hero {
     width: 100%;
     height: 100vh;
-    background: url(../../Assets/hero-bg.jpg) top center;
+    background: url(../../Assets/home-bg.jpg) top center;
     background-size: cover;
     overflow: hidden;
     position: relative;
@@ -153,20 +153,27 @@
     font-size: 14px;
     letter-spacing: 1px;
     display: inline-block;
-    padding: 12px 32px;
-    border-radius: 50px;
+    /* padding: 20px 40px; */
+    /* border-radius: 50px; */
     transition: 0.5s;
     line-height: 1;
     margin: 10px;
     color: #fff;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
-    border: 2px solid #f82249;
+    /* border: 2px solid #f82249; */
+    position: relative;
+    width: 200px;
+    height: 120px;
+    backface-visibility: hidden;
   }
   
   #hero .about-btn:hover {
-    background: #f82249;
-    color: #fff;
+    transform: scale(1.1);
+  }
+
+  #hero .about-btn:active {
+    transform: translateY(5px);
   }
   
   @-webkit-keyframes pulsate-btn {
@@ -189,4 +196,23 @@
       transform: scale(1, 1);
       opacity: 0;
     }
+  }
+
+
+  .about-btn img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-btn span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    align-content: center;
+    width: 100%;
+    z-index: 2;
   }
