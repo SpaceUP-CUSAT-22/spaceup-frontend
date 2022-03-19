@@ -5,6 +5,7 @@
 }
 .bg-home {
   position: fixed;
+  z-index: -1;
 }
 p {
   padding: 0;

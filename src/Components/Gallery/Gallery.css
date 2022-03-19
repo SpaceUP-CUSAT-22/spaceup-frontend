@@ -1,9 +1,12 @@
 .gallery-parent {
   padding: 60px;
   overflow: hidden;
-  
+  background-image: url(../../Assets/gallery-bg.jpg);
+  background-size: contain;
 }
-
+.section-header h2 {
+  color: white;
+}
 .swiper-pagination {
   margin-top: 20px;
   position: relative;
@@ -12,9 +15,9 @@
 .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
   opacity: 1;
-  border: 1px solid #000000;
+  border: 1px solid white;
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
