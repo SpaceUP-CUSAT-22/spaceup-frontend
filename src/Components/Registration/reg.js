@@ -54,7 +54,14 @@ const Reg = () => {
                         required
                       />
                     </div>
-                 
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Institution / Company" 
+                        required
+                      />
+                    </div>
                     
                     <div className="form-group">
                       <button
