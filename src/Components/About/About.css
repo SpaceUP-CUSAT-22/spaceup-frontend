@@ -1,12 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
 .parent {
-  /* background: url("../../Assets/about-bg.jpg") top center; */
- background-color: transparent;
+  background-color: transparent;
   background-size: cover;
   overflow: hidden;
   position: relative;
-  color: #fff;
+  color: white;
   padding: 60px 0 40px 0;
 }
+
 /* .parent:before {
   content: "";
   background: rgba(13, 20, 41, 0.8);
@@ -21,16 +23,25 @@
   font-weight: bold;
   margin-bottom: 10px;
   color: #fff;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 .parent h3 {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
   color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 .parent p {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 20px;
-  color: #fff;
+  color: rgb(255, 255, 255);
+  font-family: "Quicksand", sans-serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  padding-bottom: 20px;
 }
