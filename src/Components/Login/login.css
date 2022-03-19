@@ -8160,7 +8160,7 @@
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
-    color: #fbceb5; }
+    color: #f36e2c; }
     a:hover, a:focus {
       text-decoration: none !important;
       outline: none !important;
@@ -8175,7 +8175,7 @@
     color: #000; }
   
   .bg-primary {
-    background: #fbceb5 !important; }
+    background: #f36e2c !important; }
   
   .ftco-section {
     padding: 7em 0; }
@@ -8321,9 +8321,9 @@
   
   /* Style the checkmark/indicator */
   .checkbox-primary {
-    color: #fbceb5; }
+    color: #f36e2c; }
     .checkbox-primary input:checked ~ .checkmark:after {
-      color: #fbceb5; }
+      color: #f36e2c; }
   
   .btn {
     cursor: pointer;
@@ -8333,21 +8333,26 @@
     font-size: 15px;
     text-transform: uppercase; }
     .btn:hover, .btn:active, .btn:focus {
-      outline: none; }
+      outline: none;
+      transform: translateY(5px);
+      }
     .btn.btn-primary {
-      background: #fbceb5 !important;
-      border: 1px solid #fbceb5 !important;
+      background: #f36e2c !important;
+      border: 1px solid #f36e2c !important;
       color: #000 !important; }
       .btn.btn-primary:hover {
-        border: 1px solid #fbceb5;
+        border: 1px solid #f36e2c;
         background: transparent;
-        color: #fbceb5; }
+        transform: scale(1.1); 
+        color: #f36e2c; }
       .btn.btn-primary.btn-outline-primary {
-        border: 1px solid #fbceb5;
+        border: 1px solid #f36e2c;
         background: transparent;
-        color: #fbceb5; }
+        color: #f36e2c; }
         .btn.btn-primary.btn-outline-primary:hover {
           border: 1px solid transparent;
-          background: #fbceb5;
+          background: #f36e2c;
           color: #fff; }
   
+
+        

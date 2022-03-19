@@ -16,11 +16,11 @@ const About = () => {
             </div>
             <div className="col-lg-3">
               <h3>Where</h3>
-              <p>Downtown Conference Center, New York</p>
+              <p>CUSAT, Kalamassery</p>
             </div>
             <div className="col-lg-3">
               <h3>When</h3>
-              <p>Monday to Wednesday 10-12 December</p>
+              <p>April 9 & 10</p>
             </div>
           </div>
         </div>
