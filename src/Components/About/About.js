@@ -1,26 +1,21 @@
 import "./About.css";
-
+import pic from "../../Assets/about-bg.jpg";
 const About = () => {
   return (
     <>
-      <div className="parent">
-        <div className="container" data-aos="fade-up">
+      <div className="parent" id="about">
+        <div className="container">
           <div className="col-lg-12">
             <h2>About The Event</h2>
             <p>{para[0]}</p>
           </div>
           <div className="row">
-            <div className="mission col-lg-6">
+            <div className=" col-lg-6">
               <h2>Our Mission</h2>
               <p>{para[1]}</p>
             </div>
-            <div className="col-lg-3">
-              <h3>Where</h3>
-              <p>CUSAT, Kalamassery</p>
-            </div>
-            <div className="col-lg-3">
-              <h3>When</h3>
-              <p>April 9 & 10</p>
+            <div className="pic col-lg-6">
+              <img src={pic} alt="" />
             </div>
           </div>
         </div>
