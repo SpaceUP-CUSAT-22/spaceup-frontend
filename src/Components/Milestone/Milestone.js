@@ -45,7 +45,7 @@ export default Milestone;
 const Card = ({image, title, desc}) => {
     return(
         <>
-            <div className="milestone-card">
+            <div className="milestone-card" id="milestone">
                 <div className="mile-card-img">
                     <img src={image} alt=""/>
                 </div>

@@ -11,8 +11,8 @@ const Main = () => {
             <Navbar />
             <Home />
             <About />
+            <Milestone />
             <Gallery />
-            <Milestone/>
             <Footer />
         </>
     );
