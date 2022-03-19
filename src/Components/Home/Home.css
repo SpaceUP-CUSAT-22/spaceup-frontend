@@ -6,7 +6,7 @@
     height: 100vh;
     background: url(../../Assets/home-bg.jpg) top center;
     background-size: cover;
-    overflow: hidden;
+    
     position: relative;
   }
   
