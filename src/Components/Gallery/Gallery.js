@@ -22,11 +22,11 @@ import image8 from "../../Assets/gallery/8.jpg";
 const Gallery = () => {
   return (
     <>
-      <div className="gallery-parent" id="gallery">
+      <div id="gallery">
         <div className="container">
           <div className="section-header">
             <h2>Gallery</h2>
-            <p>Check our gallery from the recent events</p>
+            <p>Check out our gallery of our recent events</p>
           </div>
         </div>
         <div className="gallery-grid">

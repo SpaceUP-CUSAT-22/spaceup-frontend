@@ -6,12 +6,12 @@ const About = () => {
       <div className="parent" id="about">
         <div className="container">
           <div className="col-lg-12">
-            <h2>About The Event</h2>
+            <h2>ABOUT US</h2>
             <p>{para[0]}</p>
           </div>
           <div className="row">
             <div className="col-lg-6">
-              <h2>Our Mission</h2>
+              <h2>OUR MISSION</h2>
               <p>{para[1]}</p>
             </div>
             <div className="pic col-lg-6">
