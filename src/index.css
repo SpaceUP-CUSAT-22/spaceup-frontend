@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
+body{  
+    overflow-x: hidden;
+}
 
 
 /*Link Active Class*/
@@ -19,6 +20,7 @@
 
 #home{
     background-image: url("./assets/Home/background-home-desktop.jpg");
+    
 }
 
 @media screen and (max-width:768px){

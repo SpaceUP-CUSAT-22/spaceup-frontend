@@ -3,6 +3,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import {Link} from "react-scroll"
 
+import Logo from "../assets/logo.png"
+
 export default function NavBar(){
 
     const [menu,setShowMenu]=useState(false)
@@ -14,13 +16,13 @@ export default function NavBar(){
 
 
 
-    return <div className="flex font-sans w-screen fixed z-50  font-medium   top-0 right-0 backdrop-blur-lg lg:backdrop-blur-sm max-w-4xl right-0 lg:p-8">
+    return <div className="flex font-sans w-full fixed z-50 justify-center font-medium   top-0 right-0 backdrop-blur-lg lg:backdrop-blur-sm  right-0 lg:p-8">
     
-    
 
 
 
-    {menu&&<div className="flex flex-col items-center justify-center w-full h-screen space-y-3 text-4xl text-white text-center lg:hidden">
+
+    {menu&&<div className="flex flex-col items-center justify-center w-full min-h-screen space-y-3 text-4xl text-white text-center lg:hidden">
     
     <h2 className="cursor-pointer font-bold"><Link  to="home" spy={true} smooth={true} onClick={handleClick}>Home</Link></h2>
     <h2 className="cursor-pointer font-bold"><Link to="mission" spy={true} smooth={true} onClick={handleClick}>Our Mission</Link></h2>

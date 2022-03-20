@@ -5,17 +5,17 @@ import CapsuleImage from "../assets/Events/capsule.jpg"
 
 export default function Events(){
 
-    return <div id="event" className="flex flex-col bg-cover bg-bottom bg-no-repeat w-screen p-10 font-sans space-y-20 justify-center">
+    return <div id="event" className="flex flex-col min-h-screen bg-cover bg-bottom bg-no-repeat w-full  font-sans space-y-20 justify-center md:p-10">
     
 
     <h1 className="text-3xl font-bold text-center mt-5 text-white lg:text-5xl">Flagship Events</h1>
     <div  className="grid grid-col-1 place-items-center grid-rows-5  text-gray-50  text-center md:grid-cols-1 lg:grid-cols-2 grid-rows-3  xl:grid-cols-3 grid-rows-2 gap-3">
 
         <Slide left duration={1000}>
-        <div className="flex rounded-xl space-y-5  p-10 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
+        <div className="flex rounded-xl space-y-5  p-3 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
         
                 
-        <img src={CapsuleImage} className="rounded-xl"/>
+        <img src={CapsuleImage} className="rounded-xl w-full"/>
       
         
         <h1 className="text-2xl font-bold text-white">SKY GAZING THROUGH THE LENSES</h1>
@@ -38,9 +38,9 @@ export default function Events(){
 
 
         <Slide left  duration={1000}>
-        <div className="flex rounded-xl space-y-5  p-10 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
+        <div className="flex rounded-xl space-y-5  p-3 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
           
-        <img src={CapsuleImage} className="rounded-xl"/>
+        <img src={CapsuleImage} className="rounded-xl w-full"/>
       
         
         <h1 className="text-2xl font-bold text-white">MINI PLANETARIUM</h1>
@@ -61,10 +61,10 @@ export default function Events(){
     </Slide>
 
     <Slide left  duration={1000}>
-        <div className="flex rounded-xl space-y-5  p-10 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
+        <div className="flex rounded-xl space-y-5  p-3 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
         
                 
-        <img src={CapsuleImage} className="rounded-xl"/>
+        <img src={CapsuleImage} className="rounded-xl w-full"/>
    
       
         
@@ -90,11 +90,11 @@ export default function Events(){
     </Slide>
 
     <Slide right>
-        <div className="flex rounded-xl space-y-5  p-10 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
+        <div className="flex rounded-xl space-y-5  p-3 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
         
    
              
-        <img src={CapsuleImage} className="rounded-xl"/>
+        <img src={CapsuleImage} className="rounded-xl w-full"/>
        
        
        
@@ -121,9 +121,9 @@ export default function Events(){
 
 
     <Slide right>
-        <div className="flex rounded-xl space-y-5  p-10 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
+        <div className="flex rounded-xl space-y-5  p-3 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
                 
-        <img src={CapsuleImage} className="rounded-xl"/>
+        <img src={CapsuleImage} className="rounded-xl w-full"/>
       
         
         <h1 className="text-2xl font-bold text-white">DOCUMENTARY</h1>

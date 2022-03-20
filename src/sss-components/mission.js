@@ -5,12 +5,12 @@ export default function Mission(){
 
 
 
-    return <div id="mission" className="flex font-sans h-screen  flex-col bg-cover bg-no-repeat text-gray-50 w-screen justify-center  items-center ">
+    return <div id="mission" className="flex font-sans h-screen  flex-col bg-cover bg-no-repeat text-gray-50 w-full justify-center  items-center ">
 
     <div className="flex px-8 py-12">
 
     
-    <div className="space-y-24 my-auto max-w-7xl">
+    <div className="space-y-8 max-w-7xl md:space-y-24">
     <Fade bottom>
     <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">Our Mission</h1>
 

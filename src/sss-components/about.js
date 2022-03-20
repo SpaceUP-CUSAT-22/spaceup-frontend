@@ -5,12 +5,12 @@ export default function About(){
 
 
 
-    return <div id="about" className="flex font-sans h-screen flex-col bg-cover bg-bottom bg-no-repeat text-gray-50 w-screen justify-end  text-left items-center">
+    return <div id="about" className="flex font-sans min-h-screen flex-col bg-cover bg-bottom bg-no-repeat text-gray-50 w-full justify-end  text-left items-center">
 
     <div className="flex px-8 py-12 lg: rotate-180">
 
     
-    <div className="space-y-24 my-auto max-w-7xl">
+    <div className="space-y-8 my-auto max-w-7xl md:space-y-24">
     <Fade bottom>
     <h1 className="text-3xl font-bold lg:text-5xl">About Us</h1>
 
