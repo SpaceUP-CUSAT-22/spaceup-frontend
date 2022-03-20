@@ -3,14 +3,50 @@
 @tailwind utilities;
 
 
-Link{
-    text-decoration: none;
-    color:#fff;
-}
+
+
+
+/*Link Active Class*/
+
+
 .active{
 
     color:yellow;
+}
+
+/*Home Component*/
 
 
+#home{
+    background-image: url("./assets/Home/background-home-desktop.jpg");
+}
+
+@media screen and (max-width:768px){
+    #home{
+        background-image: url("./assets/Home/background-home-mobile.jpg");
+    }
+}
+
+
+/*About Component*/
+
+#about{
+    background-image: url("./assets/About/astro-toursim.jpg");
+}
+
+
+
+/*Mission Component*/
+
+#mission,#gallery{
+    background-image: url("./assets/Mission/background-destination-desktop.jpg");
+}
+
+/*Event Component*/
+
+#event{
+
+    background-image: url("./assets/Events/event-background.jpg");
 
 }
+

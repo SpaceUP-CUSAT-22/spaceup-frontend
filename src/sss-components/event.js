@@ -1,16 +1,17 @@
 import React from "react"
 import { Carousel } from "react-bootstrap"
 import { Slide } from "react-reveal"
-
+import CapsuleImage from "../assets/Events/capsule.jpg"
 
 export default function Events(){
 
-    return <div id="event" className="flex flex-col items-center grid-rows-5  justify-center items-center space-y-8 p-10 min-h-screen bg-cover bg-bottom bg-no-repeat text-gray-50 w-screen text-center bg-[url('/home/vishnu/Desktop/spaceup-sss/sss/public/assets/Events/event-background.jpg')] lg:flex-row justify-evenly">
+    return <div id="event" className="flex flex-col items-center grid-rows-5  justify-center items-center space-y-8 p-10 min-h-screen bg-cover bg-bottom bg-no-repeat text-gray-50 w-screen text-center lg:flex-row justify-evenly">
 
         <Slide left duration={1000}>
         <div className="flex rounded-xl space-y-5 w-5/6 p-5 flex-col items-center bg-white/30 bg-blur-3xl lg:w-1/6">
         
-        <img src="./assets/Events/capsule.jpg" className="rounded-xl"/>
+                
+        <img src={CapsuleImage} className="rounded-xl"/>
       
         
         <h1 className="text-3xl font-bold text-white">SKY GAZING THROUGH THE LENSES</h1>
@@ -35,7 +36,7 @@ export default function Events(){
         <Slide left  duration={1000}>
         <div className="flex rounded-xl space-y-5 w-5/6 p-5 flex-col items-center bg-white/30 bg-blur-3xl lg:w-1/6">
           
-        <img src="./assets/Events/capsule.jpg" className="rounded-xl"/>
+        <img src={CapsuleImage} className="rounded-xl"/>
       
         
         <h1 className="text-3xl font-bold text-white">MINI PLANETARIUM</h1>
@@ -58,7 +59,8 @@ export default function Events(){
     <Slide left  duration={1000}>
         <div className="flex rounded-xl space-y-5 w-5/6 p-5 flex-col items-center bg-white/30 bg-blur-3xl lg:w-1/6">
         
-        <img src="./assets/Events/capsule.jpg" className="rounded-xl"/>
+                
+        <img src={CapsuleImage} className="rounded-xl"/>
    
       
         
@@ -87,7 +89,8 @@ export default function Events(){
         <div className="flex rounded-xl space-y-5 w-5/6 p-5 flex-col items-center bg-white/30 bg-blur-3xl lg:w-1/6">
         
    
-        <img src="./assets/Events/capsule.jpg" className="rounded-xl"/>
+             
+        <img src={CapsuleImage} className="rounded-xl"/>
        
        
        
@@ -115,8 +118,8 @@ export default function Events(){
 
     <Slide right>
         <div className="flex rounded-xl space-y-5 w-5/6 p-5 flex-col items-center bg-white/30 bg-blur-3xl lg:w-1/6">
-       
-        <img src="./assets/Events/capsule.jpg" className="rounded-xl"/>
+                
+        <img src={CapsuleImage} className="rounded-xl"/>
       
         
         <h1 className="text-3xl font-bold text-white">DOCUMENTARY</h1>

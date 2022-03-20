@@ -5,7 +5,7 @@ export default function About(){
 
 
 
-    return <div id="about" className="flex h-screen flex-col bg-cover bg-bottom bg-no-repeat text-gray-50 w-screen justify-center  text-center items-center bg-[url('/home/vishnu/Desktop/spaceup-sss/sss/public/assets/About/astro-toursim.jpg')]">
+    return <div id="about" className="flex h-screen flex-col bg-cover bg-bottom bg-no-repeat text-gray-50 w-screen justify-center  text-center items-center">
 
     <div className="flex px-8 py-12 lg:py-10">
 

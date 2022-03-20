@@ -5,7 +5,7 @@ export default function Mission(){
 
 
 
-    return <div id="mission" className="flex h-screen flex-col bg-cover bg-no-repeat text-gray-50 w-screen justify-center  text-center items-center bg-[url('/home/vishnu/Desktop/spaceup-sss/sss/public/assets/Mission/background-destination-desktop.jpg')]">
+    return <div id="mission" className="flex h-screen flex-col bg-cover bg-no-repeat text-gray-50 w-screen justify-center  text-center items-center ">
 
             <div className="flex px-8 py-12 lg:py-10">
 

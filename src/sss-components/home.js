@@ -4,9 +4,7 @@ import Fade from 'react-reveal/Fade';
 export default function Home(){
 
 
-
-
-    return <div id="home" className="flex w-screen p-5 h-screen bg-cover bg-no-repeat bg-bottom items-center bg-[url('/home/vishnu/Desktop/spaceup-sss/sss/public/assets/Home/background-home-mobile.jpg')] lg:bg-[url('/home/vishnu/Desktop/spaceup-sss/sss/public/assets/Home/background-home-desktop.jpg')]">
+    return <div id="home" className="flex w-screen p-5 h-screen bg-cover bg-no-repeat bg-bottom items-center">
     
 
 
