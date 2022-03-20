@@ -8,10 +8,10 @@ export default function Home(){
     
 
 
-    <div className="w-1/2  px-5 space-y-5 lg:text-center md:px-1 bg-blur-xl">
+    <div className="w-full font-sans  px-5 space-y-5 lg:text-center md:px-1 bg-blur-xl">
 
     <Fade bottom duration={1000}>
-    <h1 className="text-white  font-bold sm:text-7xl md:text-7xl lg:text-8xl">Students Space Summit 2022</h1>
+    <h1 className="text-white  font-bold text-7xl md:text-7xl lg:text-8xl">Students Space Summit 2022</h1>
     </Fade>
 
     <Fade bottom duration={1000} delay={1000}>

@@ -5,16 +5,20 @@ import CapsuleImage from "../assets/Events/capsule.jpg"
 
 export default function Events(){
 
-    return <div id="event" className="flex flex-col items-center grid-rows-5  justify-center items-center space-y-8 p-10 min-h-screen bg-cover bg-bottom bg-no-repeat text-gray-50 w-screen text-center lg:flex-row justify-evenly">
+    return <div id="event" className="flex flex-col bg-cover bg-bottom bg-no-repeat w-screen p-10 font-sans space-y-20 justify-center">
+    
+
+    <h1 className="text-3xl font-bold text-center mt-5 text-white lg:text-5xl">Flagship Events</h1>
+    <div  className="grid grid-col-1 place-items-center grid-rows-5  text-gray-50  text-center md:grid-cols-1 lg:grid-cols-2 grid-rows-3  xl:grid-cols-3 grid-rows-2 gap-3">
 
         <Slide left duration={1000}>
-        <div className="flex rounded-xl space-y-5 w-5/6 p-5 flex-col items-center bg-white/30 bg-blur-3xl lg:w-1/6">
+        <div className="flex rounded-xl space-y-5  p-10 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
         
                 
         <img src={CapsuleImage} className="rounded-xl"/>
       
         
-        <h1 className="text-3xl font-bold text-white">SKY GAZING THROUGH THE LENSES</h1>
+        <h1 className="text-2xl font-bold text-white">SKY GAZING THROUGH THE LENSES</h1>
        
        <p className="text-2xl">For centuries, humans across history have seen
        the same sky and looked at the patterns of stars
@@ -34,12 +38,12 @@ export default function Events(){
 
 
         <Slide left  duration={1000}>
-        <div className="flex rounded-xl space-y-5 w-5/6 p-5 flex-col items-center bg-white/30 bg-blur-3xl lg:w-1/6">
+        <div className="flex rounded-xl space-y-5  p-10 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
           
         <img src={CapsuleImage} className="rounded-xl"/>
       
         
-        <h1 className="text-3xl font-bold text-white">MINI PLANETARIUM</h1>
+        <h1 className="text-2xl font-bold text-white">MINI PLANETARIUM</h1>
        
        <p className="text-2xl">They said the sky is not the limit, neither are the
        stars. Let’s take a tour of all the celestial bodies
@@ -57,14 +61,14 @@ export default function Events(){
     </Slide>
 
     <Slide left  duration={1000}>
-        <div className="flex rounded-xl space-y-5 w-5/6 p-5 flex-col items-center bg-white/30 bg-blur-3xl lg:w-1/6">
+        <div className="flex rounded-xl space-y-5  p-10 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
         
                 
         <img src={CapsuleImage} className="rounded-xl"/>
    
       
         
-        <h1 className="text-3xl font-bold text-white">INTERACTIVE SESSIONS</h1>
+        <h1 className="text-2xl font-bold text-white">INTERACTIVE SESSIONS</h1>
        
        <p className="text-2xl">Seminars and lectures can be quite boring and
        the whole idea of this event is to exchange
@@ -86,7 +90,7 @@ export default function Events(){
     </Slide>
 
     <Slide right>
-        <div className="flex rounded-xl space-y-5 w-5/6 p-5 flex-col items-center bg-white/30 bg-blur-3xl lg:w-1/6">
+        <div className="flex rounded-xl space-y-5  p-10 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
         
    
              
@@ -96,7 +100,7 @@ export default function Events(){
        
       
         
-        <h1 className="text-3xl font-bold text-white">STUDENTS SATELLITE PROGRAM</h1>
+        <h1 className="text-2xl font-bold text-white">STUDENTS SATELLITE PROGRAM</h1>
        
        <p className="text-2xl">Founded by the team behind SPACE-UP CUSAT and
        supported by several university clubs such as SEDS
@@ -117,12 +121,12 @@ export default function Events(){
 
 
     <Slide right>
-        <div className="flex rounded-xl space-y-5 w-5/6 p-5 flex-col items-center bg-white/30 bg-blur-3xl lg:w-1/6">
+        <div className="flex rounded-xl space-y-5  p-10 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
                 
         <img src={CapsuleImage} className="rounded-xl"/>
       
         
-        <h1 className="text-3xl font-bold text-white">DOCUMENTARY</h1>
+        <h1 className="text-2xl font-bold text-white">DOCUMENTARY</h1>
        
        <p className="text-2xl">When theoretical knowledge is integrated with
        practicality the understanding and applications
@@ -138,5 +142,6 @@ export default function Events(){
     
     
     </div>
+    </div> 
 
 }

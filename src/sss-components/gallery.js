@@ -15,21 +15,23 @@ import Image11 from "../assets/Gallery/11.jpg"
 import Image12 from "../assets/Gallery/12.jpg"
 import Image13 from "../assets/Gallery/13.jpg"
 
+import { Zoom } from "react-reveal";
 
 
 export default function GallerySection(){
 
 
   const data=[Image1,Image2,Image3,Image4,Image5,Image6,Image7,Image8,Image9,Image10,Image11,Image12,Image13]
-    return <div id="gallery" className="flex space-y-12 min-h-screen flex-col bg-cover bg-no-repeat text-gray-50 w-screen justify-center  text-center items-center">
+    return <div id="gallery" className="flex font-sans space-y-12 min-h-screen flex-col bg-cover bg-center bg-no-repeat text-gray-50 w-screen justify-center  text-center items-center">
 
-       
+ 
+          <h1 className="text-3xl font-bold lg:text-5xl">Gallery</h1>
 
       
     
 
-
-              <Carousel autoplay={true} interval={1000} infiniteLoop={true} className="w-full lg:w-1/2">
+          
+              <Carousel autoplay={true} interval={1000} infiniteLoop={true} className="w-3/4  lg:w-5/12">
             
             {
 
@@ -47,7 +49,7 @@ export default function GallerySection(){
       
             </Carousel>
 
-            
+     
 
         
 

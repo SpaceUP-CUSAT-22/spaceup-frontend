@@ -11,7 +11,7 @@
 
 .active{
 
-    color:yellow;
+    color:orange;
 }
 
 /*Home Component*/
@@ -31,22 +31,31 @@
 /*About Component*/
 
 #about{
-    background-image: url("./assets/About/astro-toursim.jpg");
+   
 }
 
 
 
 /*Mission Component*/
 
-#mission,#gallery{
+#mission{
     background-image: url("./assets/Mission/background-destination-desktop.jpg");
 }
+#about{
+   /* background-image: url("./assets/About/background-crew-desktop.jpg"); */
+   background-image: url("./assets/Mission/background-destination-desktop.jpg");
+   transform: rotate(180deg);
+}
+
 
 /*Event Component*/
 
 #event{
 
-    background-image: url("./assets/Events/event-background.jpg");
+   background-image: url("./assets/About/background-crew-desktop.jpg");
 
 }
 
+#gallery{
+    background-image: url("./assets/Events/event-background.jpg");
+}
