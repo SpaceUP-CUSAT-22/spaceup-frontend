@@ -22,7 +22,7 @@ const content = [
 const Milestone = () => {
     return (
         <>
-            <div className="milestone-parent" id="milestone">
+            <div className="milestone-parent container" id="milestone">
                 <div className="milestone-heading">
                     <h1>Milestone</h1>
                 </div>

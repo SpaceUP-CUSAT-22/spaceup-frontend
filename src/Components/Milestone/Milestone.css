@@ -1,6 +1,7 @@
 .milestone-parent {
-    width: 1100px;
+    width: 100%;
     margin: 0 auto;
+    padding: 6rem 0 4rem;
 }
 
 .milestone-heading h1{
