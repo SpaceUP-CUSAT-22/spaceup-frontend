@@ -8,7 +8,6 @@ import Events from "./sss-components/event";
 import GallerySection from "./sss-components/gallery";
 import Footer from "./sss-components/footer"
 
-
 function App() {
   return (
     <div className="flex flex-col w-screen">
@@ -19,6 +18,7 @@ function App() {
       <Events/>
       <GallerySection/>
       <Footer/>
+     
    
     </div>
   );
