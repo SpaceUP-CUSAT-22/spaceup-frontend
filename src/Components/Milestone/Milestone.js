@@ -23,15 +23,15 @@ const Milestone = () => {
     return (
         <>
             <div className="milestone-parent container" id="milestone">
-                <div className="milestone-heading">
+                <div className="section-header">
                     <h1>Milestone</h1>
                 </div>
                 <div className="milestone-body">
-                {
-                    content.map((item) => (
-                        <Card image={item.image} title={item.title} desc={item.desc}/>
-                    ))
-                }
+                    {
+                        content.map((item) => (
+                            <Card image={item.image} title={item.title} desc={item.desc} />
+                        ))
+                    }
                 </div>
             </div>
         </>
@@ -42,12 +42,12 @@ const Milestone = () => {
 
 export default Milestone;
 
-const Card = ({image, title, desc}) => {
-    return(
+const Card = ({ image, title, desc }) => {
+    return (
         <>
             <div className="milestone-card" id="milestone">
                 <div className="mile-card-img">
-                    <img src={image} alt=""/>
+                    <img src={image} alt="" />
                 </div>
                 <div className="mile-card-text">
                     <h2>{title}</h2>

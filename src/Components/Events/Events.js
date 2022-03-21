@@ -13,7 +13,7 @@ const Events = () => {
 
           <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
             <li className="nav-item">
-              <a className="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Day 1</a>
+                <a className="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Day 1</a>
             </li>
           </ul>
 

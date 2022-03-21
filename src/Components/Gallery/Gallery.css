@@ -16,18 +16,31 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: -1;
 }
 
 .gallery-grid {
   display: grid;
-  width: 78%;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
   grid-gap: 50px;
 }
-.gallery-grid img {
+
+.gallery-image-container {
+  overflow: hidden;
+}
+
+.gallery-image-container img {
   width: 100%;
   height: 100%;
+  transform-origin: 50% 65%;
+  transition: transform 1s, filter 3s ease-in-out;
+  filter: brightness(80%);
+}
+
+.gallery-image-container:hover img {
+  filter: brightness(100%);
+  transform: scale(1.3);
 }
 
 .section-header h2 {

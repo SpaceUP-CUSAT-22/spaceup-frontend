@@ -19,6 +19,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: -1;
 }
 
 #schedule .nav-tabs {
@@ -36,7 +37,8 @@
 
 #schedule .nav-tabs a {
   border: none;
-  border-radius: 50px;
+  border-radius: 0;
+  clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
   font-weight: 600;
   background-color: #0e1b4d;
   color: #fff;
@@ -62,7 +64,7 @@
 }
 
 #schedule .nav-tabs a.active {
-  background-color: #ee530c;
+  background-color: #f36e2d;
   color: #fff;
 }
 
@@ -70,6 +72,7 @@
   text-align: center;
   font-size: 18px;
   font-style: italic;
+  color: #d3d6e0;
   margin: 0 auto 30px auto;
 }
 
@@ -91,7 +94,7 @@
 }
 
 #schedule .schedule-item:hover {
-  background-color: #fff;
+  background-color: rgb(7, 3, 46);
 }
 
 #schedule .schedule-item time {
@@ -119,6 +122,7 @@
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
+  color: #ebebeb;
 }
 
 #schedule .schedule-item h4 span {
@@ -130,6 +134,6 @@
 
 #schedule .schedule-item p {
   font-style: italic;
-  color: #152b79;
+  color: #5b73cc;
   margin-bottom: 0;
 }

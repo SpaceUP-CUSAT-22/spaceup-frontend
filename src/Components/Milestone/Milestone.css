@@ -1,86 +1,86 @@
 .milestone-parent {
-    width: 100%;
-    margin: 0 auto;
-    padding: 6rem 0 4rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 6rem 0 4rem;
 }
 
-.milestone-heading h1{
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: white;
-    text-align: center;
-  font-family: 'nasamedium';
+.section-header h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0px;
+  color: white;
+  text-align: center;
+  font-family: "nasamedium";
   letter-spacing: 4px;
   font-size: 50px;
 }
 
 .milestone-body {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 60px;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 60px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .milestone-card {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .mile-card-img {
-    width: 170px;
-    height: 240px;
-    clip-path: polygon(40% 0, 100% 0, 100% 80%, 60% 100%, 0 100%, 0% 60%, 0 20%);
+  width: 170px;
+  height: 240px;
+  clip-path: polygon(40% 0, 100% 0, 100% 80%, 60% 100%, 0 100%, 0% 60%, 0 20%);
 }
 
 .mile-card-img img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .mile-card-text {
-    width: calc(100% - 170px);
-    padding: 0 20px 0 20px;
+  width: calc(100% - 170px);
+  padding: 0 20px 0 20px;
 }
 
 .mile-card-text h2 {
-    font-family: 'nasamedium';
-    color: white;
-    line-height: 1.1;
+  font-family: "nasamedium";
+  color: white;
+  line-height: 1.1;
 }
 
 .mile-card-text p {
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 @media screen and (max-width: 1360px) {
-    .milestone-parent {
-        width: 600px;
-    }
+  .milestone-parent {
+    width: 600px;
+  }
 
-    .milestone-body {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .milestone-body {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media screen and (max-width: 690px) {
-    .milestone-parent {
-        width: 60%;
-    }
+  .milestone-parent {
+    width: 60%;
+  }
 
-    .milestone-card {
-        flex-direction: column;
-        align-items: center;
-    }
+  .milestone-card {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .mile-card-text {
-        width: calc(100%);
-        padding: 0;
-        text-align: center;
-    }
+  .mile-card-text {
+    width: calc(100%);
+    padding: 0;
+    text-align: center;
+  }
 }
