@@ -1,0 +1,67 @@
+.hall__parent{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    overflow: auto;
+    padding: 5rem;
+
+
+   
+}
+
+.hall__stage{
+    background: #271658;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 20vw;
+}
+
+.hall__front{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap:3rem;
+    place-items: center;
+}
+
+.hall__balcony{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:1fr;
+    gap:3rem;
+
+}
+
+.hall__back{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    gap:3rem;
+}
+.hall__back__middle{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    gap:3rem;
+
+}
+.hall__back__extreme{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    gap:3rem;
+
+}
+
+@media screen and (min-width:768px) {
+    .hall__parent{
+        width: 100vw;
+        height: 100vh;
+    }
+    
+}
