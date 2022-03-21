@@ -7,7 +7,6 @@ import Gallery from "./Components/Gallery/Gallery";
 import {Milestone} from "./Components/Milestone/Milestone";
 import Footer from "./Components/Footer/footer";
 import Speakers from "./Components/Speakers/Speakers";
-import SeatMap from "./Components/Registration/seatmap";
 
 const Main = () => {
     return (
@@ -20,8 +19,7 @@ const Main = () => {
             <Team />
             <Speakers />
             <Gallery />
-            {/* <Footer />
-            <SeatMap /> */}
+            <Footer />
         </>
     );
 }

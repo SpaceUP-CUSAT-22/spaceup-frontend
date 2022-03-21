@@ -2,11 +2,15 @@ import "./Navbar.css";
 import logo from "../../Assets/space_up-logo.png";
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import ham from "../../Assets/ham.svg";
+
 
 const Navbar = () => {
   const navItems = ["Home", "About", "SSS", "Events", "Milestone", "Team", "Speakers", "Gallery"];
 
   const [state, setState] = useState(true);
+  const [click, setClick] = useState(false);
+
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -25,23 +29,23 @@ const Navbar = () => {
       <header id="header" className={(state) ? "d-flex align-items-center" : "d-flex align-items-center scrolled"}>
         <div className="nav-parent">
 
-          <div id="logo" className="">
+          <div id="logo">
             <a href="/" className="scrollto">
               <img src={logo} className="" alt="" />
             </a>
           </div>
 
-          <nav id="navbar" className="navbar order-last order-lg-0">
+          <nav id="navbar" className={ "navbar order-last order-lg-0 navbar-mobile"}>
             <ul>
               {navItems.map((item, index) => (
-                <li className="dropdown">
+                <li className="dropdown" onClick={() => setClick(!click)}>
                   <Link className="nav-link scrollto" to={item.toLowerCase()}>{item}</Link>
                   <DropDown index={index} />
                 </li>
               ))}
             </ul>
 
-            <i className="bi bi-list mobile-nav-toggle"></i>
+            <img src={ham} onClick={() => setClick(!click)} className="ham" alt=""/>
           </nav>
 
           <div className="social-media">
