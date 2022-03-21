@@ -21,13 +21,12 @@ function App() {
         <img src={bgimage} alt="" />
         
       </div>
+
       <span className="shoot-star star-1">
         <img src={shoot} alt="" />
       </span>
 
-      <span className="shoot-star star-2">
-        <img src={shoot} alt="" />
-      </span>
+     
 
       <span className="shoot-star star-3">
         <img src={shoot} alt="" />

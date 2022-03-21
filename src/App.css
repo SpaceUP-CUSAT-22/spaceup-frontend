@@ -52,26 +52,11 @@
   }
 }
 
-.star-2 {
-  animation: star2 4s ease-out 6s infinite;
-  top: 0;
-  right: 0;
-}
 
-@keyframes star2 {
-  from {
-    transform: translate(0, 0) rotate(110deg);
-    opacity: 1;
-  }
-  to {
-    transform: translate(-600px, 300px) rotate(110deg);
-    opacity: 0;
-  }
-}
 
 .star-3 {
   animation: star3 4s ease-out 7s infinite;
-  top: 0;
+  top: -10%;
   left: 30%;
 }
 

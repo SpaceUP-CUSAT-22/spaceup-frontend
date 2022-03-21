@@ -22,22 +22,22 @@ import image8 from "../../Assets/gallery/8.jpg";
 const Gallery = () => {
   return (
     <>
-      <div className="gallery-parent" id="gallery">
+      <div id="gallery">
         <div className="container">
           <div className="section-header">
             <h2>Gallery</h2>
-            <p>Check our gallery from the recent events</p>
+            <p>Check out our gallery of our recent events</p>
           </div>
         </div>
-        <div className="gallery-grid">
-          <img src={image1} alt="" />
-          <img src={image2} alt="" />
-          <img src={image3} alt="" />
-          <img src={image4} alt="" />
-          <img src={image5} alt="" />
-          <img src={image6} alt="" />
-          <img src={image7} alt="" />
-          <img src={image8} alt="" />
+        <div className="gallery-grid container">
+          <div className="gallery-image-container"><img src={image1} alt="" /></div>
+          <div className="gallery-image-container"><img src={image2} alt="" /></div>
+          <div className="gallery-image-container"><img src={image3} alt="" /></div>
+          <div className="gallery-image-container"><img src={image4} alt="" /></div>
+          <div className="gallery-image-container"><img src={image5} alt="" /></div>
+          <div className="gallery-image-container"><img src={image6} alt="" /></div>
+          <div className="gallery-image-container"><img src={image7} alt="" /></div>
+          <div className="gallery-image-container"><img src={image8} alt="" /></div>
         </div>
         {/* <Swiper
           spaceBetween={40}

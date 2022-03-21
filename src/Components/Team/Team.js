@@ -1,6 +1,6 @@
 import React from "react";
 import "./Team.css";
-import {Button} from "../Home/Home";
+import Button from "../Elements/Button";
 
 export default function Team() {
   return (
