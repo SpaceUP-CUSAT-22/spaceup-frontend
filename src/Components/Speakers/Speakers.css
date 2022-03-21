@@ -1,0 +1,58 @@
+section
+{
+    /* min-height: 100vh; */
+    padding: 7.5rem 0 4rem;
+}
+
+.speakers-head h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+  .speakers-head {
+    text-align: center;
+  }
+  .speakers-head h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .speaker-main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15rem;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .sub-1 {
+    margin-left: auto;
+    margin-right: 6rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    margin-bottom: 3.5rem;
+  }
+
+  .sub-2 {
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    margin-bottom: 3.5rem;
+  }
+
+  .sub-3 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: aliceblue;
+  }
+
+
+
+  

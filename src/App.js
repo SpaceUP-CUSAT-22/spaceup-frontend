@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./Components/Login/login";
 import Signup from "./Components/Login/signup";
 import Reg from "./Components/Registration/reg"
+import Fullteam from "./Components/Team/Fullteam.js";
 
 /* --------------------------------------------------
   Import Components in the Main.js file 
@@ -38,6 +39,7 @@ function App() {
           <Route path="/login" component={Login} />
           <Route path="/signup" component={Signup} />
           <Route path="/reg" component={Reg} />
+          <Route path="/team" component={Fullteam} />
           {/* <Route component={Error}/> */}
         </Switch>
       </Router>

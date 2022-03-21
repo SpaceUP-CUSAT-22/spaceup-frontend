@@ -1,9 +1,11 @@
 import Navbar from "./Components/Navbar/Navbar";
-import Home from "./Components/Home/Home";
+import {Home} from "./Components/Home/Home";
 import About from "./Components/About/About";
+import Team from "./Components/Team/Team";
 import Gallery from "./Components/Gallery/Gallery";
-import Milestone from "./Components/Milestone/Milestone";
+import {Milestone} from "./Components/Milestone/Milestone";
 import Footer from "./Components/Footer/footer";
+import Speakers from "./Components/Speakers/Speakers";
 
 const Main = () => {
     return (
@@ -12,6 +14,8 @@ const Main = () => {
             <Home />
             <About />
             <Milestone />
+            <Team />
+            <Speakers />
             <Gallery />
             <Footer />
         </>

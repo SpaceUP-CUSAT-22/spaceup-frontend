@@ -39,9 +39,6 @@ const Milestone = () => {
     );
 }
 
-
-export default Milestone;
-
 const Card = ({image, title, desc}) => {
     return(
         <>
@@ -57,3 +54,5 @@ const Card = ({image, title, desc}) => {
         </>
     );
 }
+
+export {Milestone, Card};
