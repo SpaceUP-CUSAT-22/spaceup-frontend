@@ -28,15 +28,6 @@ export default function Team() {
                 </div>
               <div style={{padding: "25px"}} ><h2 className="main">Lorem ipsum dolor</h2><h2>Designation</h2></div>
             </div>
-            {/* <div className="content">
-              <h2>Lorem ipsum dolor</h2>
-              <p>
-                Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-                admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
-                quis iuvaret expetendis his, te elit voluptua dignissim per,
-                habeo iusto primis ea eam.
-              </p>
-            </div> */}
             <i className="step-line"></i>
             <div className="date"></div>
           </div>
