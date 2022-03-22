@@ -1,0 +1,6 @@
+.arrangement__parent{
+    display: grid;
+    gap:0.5rem;
+    width: fit-content;
+    padding: 1rem;
+}
