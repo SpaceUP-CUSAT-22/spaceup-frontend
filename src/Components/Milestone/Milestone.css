@@ -1,7 +1,11 @@
-.milestone-parent {
-  width: 100%;
-  margin: 0 auto;
+#milestone {
   padding: 6rem 0 4rem;
+  background: #020225;
+  color: whitesmoke;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  position: relative;
 }
 
 .section-header h1 {
@@ -46,9 +50,11 @@
 }
 
 .mile-card-text h2 {
-  font-family: "nasamedium";
+  font-size: 1.75rem;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 700;
   color: white;
-  line-height: 1.1;
+  line-height: 1.1; 
 }
 
 .mile-card-text p {

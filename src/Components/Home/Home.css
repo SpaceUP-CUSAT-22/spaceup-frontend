@@ -4,12 +4,9 @@
 #home {
   width: 100%;
   height: 100vh;
-  
   background-size: cover;
   position: relative;
 }
-
-
 
 @media (min-width: 1024px) {
   #home {
@@ -67,7 +64,6 @@
 
 #home p {
   color: #ebebeb;
-  font-weight: 700;
   font-size: 20px;
 }
 

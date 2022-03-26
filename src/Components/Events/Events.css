@@ -9,17 +9,7 @@
   min-height: 100vh;
   background-size: cover;
   position: relative;
-}
-
-#schedule:before {
-  content: "";
-  background: rgba(6, 12, 34, 0.8);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
+  z-index: 5;
 }
 
 #schedule .nav-tabs {
@@ -84,6 +74,8 @@
 
 #schedule .tab-pane {
   transition: ease-in-out 0.2s;
+  background-color: #0a153b86;
+  backdrop-filter: blur(10px);
 }
 
 #schedule .schedule-item {
