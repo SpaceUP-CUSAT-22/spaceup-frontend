@@ -22,7 +22,7 @@ function Footer() {
                             </p>
                         </div>
 
-                        <div class="mx-auto footer-contact text-right col-md-6">
+                        <div class="mx-auto footer-contact text-md-right col-md-6">
                             <h2 class="text-white">Contact</h2>
                             <p>Organiser</p>
                             <p><a href="tel:+4733378901">+ 01 234 567 88</a></p>

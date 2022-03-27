@@ -26,7 +26,6 @@ const Gallery = () => {
         <div className="container">
           <div className="section-header">
             <h2>Gallery</h2>
-            <p>Check out our gallery of our recent events</p>
           </div>
         </div>
         <div className="gallery-grid container">

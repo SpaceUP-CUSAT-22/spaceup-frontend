@@ -5,22 +5,21 @@ const Events = () => {
     <>
       {/* <!-- ======= Schedule Section ======= --> */}
       <section id="schedule" className="section-with-bg">
-        <div className="container" data-aos="fade-up">
+        <div className="container">
           <div className="section-header">
             <h2>Event Schedule</h2>
-            <p>Here is our event schedule</p>
           </div>
 
-          <ul className="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+          <ul className="nav nav-tabs" role="tablist">
             <li className="nav-item">
-                <a className="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Day 1</a>
+                <a className="nav-link active" href="#day-1" role="tab">Day 1</a>
             </li>
           </ul>
 
           <h3 className="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
             necessitatibus voluptatem quis labore perspiciatis quia.</h3>
 
-          <div className="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div className="tab-content row justify-content-center">
 
             {/* <!-- Schdule Day 1 --> */}
             <div role="tabpanel" className="col-lg-9 tab-pane fade show active" id="day-1">

@@ -1,4 +1,5 @@
 import "./Milestone.css";
+import Star from "../Stars/Star";
 
 const content = [
     {
@@ -22,18 +23,21 @@ const content = [
 const Milestone = () => {
     return (
         <>
-            <div className="milestone-parent container" id="milestone">
-                <div className="section-header">
-                    <h1>Milestone</h1>
+            <section id="milestone">
+                <Star />
+                <div className="container">
+                    <div className="section-header">
+                        <h1>Milestone</h1>
+                    </div>
+                    <div className="milestone-body">
+                        {
+                            content.map((item) => (
+                                <Card image={item.image} title={item.title} desc={item.desc} />
+                            ))
+                        }
+                    </div>
                 </div>
-                <div className="milestone-body">
-                    {
-                        content.map((item) => (
-                            <Card image={item.image} title={item.title} desc={item.desc} />
-                        ))
-                    }
-                </div>
-            </div>
+            </section>
         </>
 
     );
@@ -45,7 +49,7 @@ export default Milestone;
 const Card = ({ image, title, desc }) => {
     return (
         <>
-            <div className="milestone-card" id="milestone">
+            <div className="milestone-card">
                 <div className="mile-card-img">
                     <img src={image} alt="" />
                 </div>
@@ -58,4 +62,4 @@ const Card = ({ image, title, desc }) => {
     );
 }
 
-export {Milestone, Card};
+export { Milestone, Card };
