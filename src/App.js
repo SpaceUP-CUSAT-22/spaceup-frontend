@@ -9,17 +9,16 @@ import Signup from "./Components/Login/signup";
 import Reg from "./Components/Registration/reg"
 import Fullteam from "./Components/Team/Fullteam.js";
 import SHome from "./Components/SSS/home";
-// import SEvent from "./Components/SSS/event";
-// import SAbout from "./Components/SSS/about";
-// import SFooter from "./Components/SSS/footer";
-// import SGallery from "./Components/SSS/gallery";
-import SNav from "./Components/Navbar/Navbar";
+import SEvent from "./Components/SSS/event";
+import SAbout from "./Components/SSS/about";
+import SFooter from "./Components/SSS/footer";
+import SGallery from "./Components/SSS/gallery";
+import SNav from "./Components/SSS/navbar";
 
 /* --------------------------------------------------
   Import Components in the Main.js file 
   ---------------------------------------------------*/
 
-function App() {
 const Background = ({ children }) => {
   return (
     <>
@@ -35,7 +34,7 @@ const Background = ({ children }) => {
         <img src={shoot} alt="" />
       </span>
 
-        {children}
+      {children}
     </>
   );
 };
@@ -45,10 +44,11 @@ const SSS = () => {
     <div>
       <SNav />
       <SHome />
-      {/* <SAbout /> */}
-      {/* <SEvent /> */}
-      {/* <SGallery /> */}
-      {/* <SFooter /> */}
+      <SAbout />
+      <SEvent />
+      <SGallery />
+      <div className="w-full h-1 border-b-4 border-orange-500 bg-sky-bg"></div>
+      <SFooter />
     </div>
   );
 }

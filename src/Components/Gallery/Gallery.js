@@ -1,8 +1,5 @@
 import "./Gallery.css";
 
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import SwiperCore, { Navigation, Pagination, Scrollbar } from "swiper";
-
 import image1 from "../../Assets/gallery/1.jpg";
 import image2 from "../../Assets/gallery/2.jpg";
 import image3 from "../../Assets/gallery/3.jpg";
@@ -12,13 +9,6 @@ import image6 from "../../Assets/gallery/6.jpg";
 import image7 from "../../Assets/gallery/7.jpg";
 import image8 from "../../Assets/gallery/8.jpg";
 import Heading from "../Elements/Heading";
-
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
-// import "swiper/css/scrollbar";
-
-// SwiperCore.use([Navigation, Pagination, Scrollbar]);
 
 const Gallery = () => {
   return (

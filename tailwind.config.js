@@ -8,9 +8,13 @@ module.exports = {
       'poppins': ['Poppins', 'sans-serif'],
     },
     extend: {
+      colors: {
+        'sky-bg' : '#000000', 
+      },
       backgroundImage: {
         'sss-bg': "url('/src/Assets/sssAssets/Home/background-home-desktop.jpg')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        'sss-bg-mobile': "url('/src/Assets/sssAssets/Home/background-home-mobile.jpg')",
+        'sss-bg-tablet': "url('/src/Assets/sssAssets/Home/background-home-tablet.jpg')",
       },
     },
   },
