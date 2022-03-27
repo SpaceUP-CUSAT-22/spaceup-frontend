@@ -8,10 +8,33 @@ import {Milestone} from "./Components/Milestone/Milestone";
 import Footer from "./Components/Footer/footer";
 import Speakers from "./Components/Speakers/Speakers";
 
+import { useRef, useEffect, useState } from "react";
 const Main = () => {
+    const mainBody = useRef();
+    const [scroll, setScroll] = useState(0);
+    let activeScroll = 0;
+    let currentActive = 0;
+
+    useEffect(() => {
+    window.addEventListener("scroll", () => {
+        activeScroll =  window.scrollY;
+        
+        for(let i=1; i<mainBody.current.children.length; i++){
+            currentActive = mainBody.current.children[i];
+            console.log(activeScroll, currentActive.offsetTop, currentActive.offsetTop + currentActive.offsetHeight, i);
+            if(activeScroll >= currentActive.offsetTop - 50 && activeScroll <= (currentActive.offsetTop + currentActive.offsetHeight)) {
+                setScroll(i-1);
+            }
+        }
+
+    });
+    }, []) ;
+    
+
     return (
         <>
-            <Navbar />
+        <div ref={mainBody}>
+            <Navbar scroll={scroll}/>
             <Home />
             <About />
             <Event /> 
@@ -20,6 +43,8 @@ const Main = () => {
             <Speakers />
             <Gallery />
             <Footer />
+        </div>
+            
         </>
     );
 }

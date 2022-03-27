@@ -1,13 +1,13 @@
 import "./Navbar.css";
 import logo from "../../Assets/space_up-logo.png";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-scroll";
 import ham from "../../Assets/ham.svg";
 import cross from "../../Assets/cross.png";
 
 
-const Navbar = () => {
-  const navItems = ["Home", "About", "SSS", "Events", "Milestone", "Team", "Speakers", "Gallery"];
+const Navbar = ({scroll}) => {
+  const navItems = ["Home", "About", "Events", "Milestone", "Team", "Speakers", "Gallery", "SSS"];
 
   const [state, setState] = useState(true);
   const [click, setClick] = useState(false);
@@ -41,8 +41,7 @@ const Navbar = () => {
             <ul>
               {navItems.map((item, index) => (
                 <li className="dropdown">
-                  <Link className="nav-link scrollto" onClick={() => setClick(!click)} to={item.toLowerCase()}>{item}</Link>
-                  <DropDown index={index} />
+                  <Link className={(scroll === (index)) ? "nav-link scrollto active" : "nav-link scrollto"} to={item.toLowerCase()}>{item}</Link>
                 </li>
               ))}
             </ul>
@@ -76,22 +75,22 @@ const Navbar = () => {
 
 export default Navbar;
 
-const DropDown = ({ index }) => {
-  const dropItems = ["Event Chart", "Flagship Event"];
+// const DropDown = ({ index }) => {
+//   const dropItems = ["Event Chart", "Flagship Event"];
 
-  if (index === 3) {
-    return (
-      <>
-        <ul>
-          {dropItems.map((item) => (
-            <li><a href="/">{item}</a></li>
-          ))}
-        </ul>
+//   if (index === 3) {
+//     return (
+//       <>
+//         <ul>
+//           {dropItems.map((item) => (
+//             <li><a href="/">{item}</a></li>
+//           ))}
+//         </ul>
 
-      </>
-    );
-  }
-  else {
-    return null;
-  }
-}
+//       </>
+//     );
+//   }
+//   else {
+//     return null;
+//   }
+// }

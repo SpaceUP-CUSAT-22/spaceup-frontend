@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
   # Schedule Section
   --------------------------------------------------------------*/
-#schedule {
+#events {
   padding: 6rem 0 4rem;
   background: transparent;
   color: whitesmoke;
@@ -12,7 +12,7 @@
   z-index: 5;
 }
 
-#schedule .nav-tabs {
+#events .nav-tabs {
   text-align: center;
   margin: auto;
   display: block;
@@ -20,12 +20,12 @@
   margin-bottom: 30px;
 }
 
-#schedule .nav-tabs li {
+#events .nav-tabs li {
   display: inline-block;
   margin-bottom: 0;
 }
 
-#schedule .nav-tabs a {
+#events .nav-tabs a {
   border: none;
   border-radius: 0;
   clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0 80%, 0 0);
@@ -36,29 +36,29 @@
 }
 
 @media (max-width: 991px) {
-  #schedule .nav-tabs a {
+  #events .nav-tabs a {
     padding: 8px 60px;
   }
 }
 
 @media (max-width: 767px) {
-  #schedule .nav-tabs a {
+  #events .nav-tabs a {
     padding: 8px 50px;
   }
 }
 
 @media (max-width: 480px) {
-  #schedule .nav-tabs a {
+  #events .nav-tabs a {
     padding: 8px 30px;
   }
 }
 
-#schedule .nav-tabs a.active {
+#events .nav-tabs a.active {
   background-color: #f36e2d;
   color: #fff;
 }
 
-#schedule .sub-heading {
+#events .sub-heading {
   text-align: center;
   font-size: 18px;
   font-style: italic;
@@ -67,34 +67,34 @@
 }
 
 @media (min-width: 991px) {
-  #schedule .sub-heading {
+  #events .sub-heading {
     width: 75%;
   }
 }
 
-#schedule .tab-pane {
+#events .tab-pane {
   transition: ease-in-out 0.2s;
   background-color: #0a153b86;
   backdrop-filter: blur(10px);
 }
 
-#schedule .schedule-item {
+#events .schedule-item {
   border-bottom: 1px solid #cad4f6;
   padding-top: 15px;
   padding-bottom: 15px;
   transition: background-color ease-in-out 0.3s;
 }
 
-#schedule .schedule-item:hover {
+#events .schedule-item:hover {
   background-color: rgb(7, 3, 46);
 }
 
-#schedule .schedule-item time {
+#events .schedule-item time {
   padding-bottom: 5px;
   display: inline-block;
 }
 
-#schedule .schedule-item .speaker {
+#events .schedule-item .speaker {
   width: 60px;
   height: 60px;
   overflow: hidden;
@@ -103,28 +103,28 @@
   margin: 0 10px 10px 0;
 }
 
-#schedule .schedule-item .speaker img {
+#events .schedule-item .speaker img {
   height: 100%;
   transform: translateX(-50%);
   margin-left: 50%;
   transition: all ease-in-out 0.3s;
 }
 
-#schedule .schedule-item h4 {
+#events .schedule-item h4 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
   color: #ebebeb;
 }
 
-#schedule .schedule-item h4 span {
+#events .schedule-item h4 span {
   font-style: italic;
   color: #d3d6e0;
   font-weight: normal;
   font-size: 16px;
 }
 
-#schedule .schedule-item p {
+#events .schedule-item p {
   font-style: italic;
   color: #5b73cc;
   margin-bottom: 0;

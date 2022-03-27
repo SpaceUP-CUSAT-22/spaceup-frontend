@@ -5,7 +5,7 @@ const Events = () => {
   return (
     <>
       {/* <!-- ======= Schedule Section ======= --> */}
-      <section id="schedule" className="section-with-bg">
+      <section id="events" className="section-with-bg">
         <div className="container">
           <Heading text={"EVENT SCHEDULE"}/>
 

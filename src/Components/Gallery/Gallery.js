@@ -27,7 +27,8 @@ const Gallery = () => {
         <div className="container">
           <Heading text={"GALLERY"} />
         </div>
-        <div className="gallery-grid container">
+        <div className="gallery-grid 
+        container">
           <div className="gallery-image-container"><img src={image1} alt="" /></div>
           <div className="gallery-image-container"><img src={image2} alt="" /></div>
           <div className="gallery-image-container"><img src={image3} alt="" /></div>
@@ -37,39 +38,6 @@ const Gallery = () => {
           <div className="gallery-image-container"><img src={image7} alt="" /></div>
           <div className="gallery-image-container"><img src={image8} alt="" /></div>
         </div>
-        {/* <Swiper
-          spaceBetween={40}
-          slidesPerView={5}
-          navigation
-          pagination={{ clickable: true }}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
-          <SwiperSlide>
-            <img src={image1} class="img-fluid" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={image2} class="img-fluid" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={image3} class="img-fluid" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={image4} class="img-fluid" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={image5} class="img-fluid" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={image6} class="img-fluid" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={image7} class="img-fluid" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={image8} class="img-fluid" alt="" />
-          </SwiperSlide>
-        </Swiper> */}
       </div>
     </>
   );

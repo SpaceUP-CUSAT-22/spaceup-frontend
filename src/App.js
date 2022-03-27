@@ -14,6 +14,8 @@ import Fullteam from "./Components/Team/Fullteam.js";
   ---------------------------------------------------*/
 
 function App() {
+
+
   return (
     <>
       
@@ -34,7 +36,7 @@ function App() {
 
       <Router>
         <Switch>
-          <Route exact path="/" component={Main} />
+          <Route exact path="/" component={Main}/>
           <Route path="/login" component={Login} />
           <Route path="/signup" component={Signup} />
           <Route path="/reg" component={Reg} />

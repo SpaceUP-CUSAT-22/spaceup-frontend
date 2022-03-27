@@ -265,20 +265,21 @@
   .cross {
     display: block;
     position: absolute;
-    right: 0%;
-    top: 0%;
+    right: 20px;
+    top: 10px;
     z-index: 1000;
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
   }
 
   .navbar-mobile {
     position: fixed !important;
-    top: 40px;
+    top: 0;
     left: 0;
     margin: 0 auto;
-    width: calc(95%);
-    height: calc(100vh - 40px);
+    width: calc(100%);
+    height: calc(100vh);
     background: #fff;
   }
 
@@ -388,8 +389,8 @@
 
 .ham {
   display: none;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
   background-color: transparent;
   transition: transform 0.2s linear;

@@ -29,6 +29,7 @@
 
 .gallery-image-container {
   overflow: hidden;
+  display: block;
 }
 
 .gallery-image-container img {
@@ -37,12 +38,13 @@
   transform-origin: 50% 65%;
   transition: transform 1s, filter 3s ease-in-out;
   filter: brightness(80%);
+  cursor: pointer;
 }
 
 .gallery-image-container:hover img {
   transform-origin: 50% 65%;
-  transition: transform 1s, filter 3s ease-in-out;
-  filter: brightness(80%);
+  transform: scale(1.2);
+  filter: brightness(100%);
 }
 
 .section-header h2 {
