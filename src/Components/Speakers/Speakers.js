@@ -3,6 +3,7 @@ import "./Speakers.css";
 import "reactjs-popup/dist/index.css";
 import Popup from "./Popup";
 import Star from '../Stars/Star';
+import Heading from "../Elements/Heading";
 
 const data = [
   {
@@ -42,9 +43,7 @@ export default function Speakers() {
     <section id="speakers">
       <Star />
       <div className="container">
-        <div className="speakers-head">
-          <h2 className="section-header">SPEAKERS</h2>
-        </div>
+        <Heading text={"SPEAKERS"} />
         <div className="speaker-main">
           {data.map((speaker) => (
             <div className="sub" id={speaker.id}>

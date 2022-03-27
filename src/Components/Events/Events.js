@@ -1,3 +1,4 @@
+import Heading from "../Elements/Heading";
 import "./Events.css";
 
 const Events = () => {
@@ -6,9 +7,7 @@ const Events = () => {
       {/* <!-- ======= Schedule Section ======= --> */}
       <section id="schedule" className="section-with-bg">
         <div className="container">
-          <div className="section-header">
-            <h2>Event Schedule</h2>
-          </div>
+          <Heading text={"EVENT SCHEDULE"}/>
 
           <ul className="nav nav-tabs" role="tablist">
             <li className="nav-item">

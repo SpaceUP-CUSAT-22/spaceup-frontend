@@ -1,5 +1,6 @@
 import "./Milestone.css";
 import Star from "../Stars/Star";
+import Heading from "../Elements/Heading";
 
 const content = [
     {
@@ -26,9 +27,7 @@ const Milestone = () => {
             <section id="milestone">
                 <Star />
                 <div className="container">
-                    <div className="section-header">
-                        <h1>Milestone</h1>
-                    </div>
+                    <Heading text={"MILESTONES"} />
                     <div className="milestone-body">
                         {
                             content.map((item) => (

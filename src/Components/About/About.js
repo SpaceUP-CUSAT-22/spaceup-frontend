@@ -1,6 +1,8 @@
 import "./About.css";
 import pic from "../../Assets/about-bg.jpg";
 import Star from "../Stars/Star";
+import Heading from "../Elements/Heading";
+
 const About = () => {
   return (
     <>
@@ -8,12 +10,12 @@ const About = () => {
         <Star />
         <div className="container">
           <div className="col-lg-12">
-            <h2 className="section-header">ABOUT US</h2>
+            <Heading text={"ABOUT US"} />
             <p>{para[0]}</p>
           </div>
           <div className="row">
             <div className="col-lg-6">
-              <h2 className="section-header">OUR MISSION</h2>
+              <Heading text={"OUR MISSON"} />
               <p>{para[1]}</p>
             </div>
             <div className="pic col-lg-6">
