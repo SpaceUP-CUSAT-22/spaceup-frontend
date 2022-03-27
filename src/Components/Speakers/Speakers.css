@@ -14,20 +14,18 @@
   letter-spacing: 4px;
   font-size: 50px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: calc(10px + 1.5rem);
   color: #fff;
   text-align: center;
 }
 
-.speakers-head {
-  text-align: center;
+.speaker-main {
+  display: flexbox;
+  justify-content: center;
 }
 
-.speaker-main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: space-around;
+.speakers-head {
+  text-align: center;
 }
 
 @media (min-width: 771px) {
@@ -37,35 +35,49 @@
 }
 
 .sub {
-  width: 470px;
-  height: 240px;
   background-color: rgba(255, 255, 255, 0.137);
   color: #fff;
-  display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 20px;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  display: flex;
+  width: calc(50% - 2rem);
 }
 
 .speaker-img {
-  height: 140px;
-  width: 140px;
+  position: relative;
+  left: -2rem;
+  top: -1rem;
+  height: 102%;
 }
 
 .speaker-img img {
   width: 100%;
-  height: 100%;
+  height: 15rem;
   clip-path: polygon(20% 0, 100% 0, 100% 80%, 80% 100%, 80% 100%, 0% 100%, 0 20%);
 }
 
 .speaker-content {
-  width: 60%;
+  width: 100%;
 }
 
 .speaker-content h2 {
   font-weight: 600;
   font-size: 25px;
+  color: #fff;
+}
+
+.speaker-name {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.speaker-position {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 15px;
   color: #fff;
 }
 
@@ -77,8 +89,15 @@
 }
 
 .more {
-  color: #f36e2d;
-  width: fit-content;
+  width: 40%;
+  position: relative;
+  right: -1rem;
+  background-color: #f36e2d;
+  clip-path: polygon(15% 0, 100% 0, 100% 65%, 85% 100%, 70% 100%, 0% 100%, 0 40%);
+  color: #fafafa;
+  padding: 1rem 2rem;
+  text-align: center;
+  padding: 2px 0;
 }
 
 .more:hover {

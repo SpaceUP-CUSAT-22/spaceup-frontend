@@ -1,4 +1,3 @@
-import "./Button.css";
 import { Link } from 'react-router-dom';
 import btn_bg from "../../Assets/btn-bg.svg";
 
