@@ -7,7 +7,7 @@ import Star from '../Stars/Star';
 const data = [
   {
     id: 1,
-    imgsrc: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29uYXxlbnwwfHwwfHw%3D&w=1000&q=80",
+    imgsrc: "https://randomuser.me/api/portraits/men/35.jpg",
     name: "Lorem Ipsum",
     position: "Lorem Ipsum",
     breif: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta fugit eveniet, ullam deserunt inventore omnis!",
@@ -15,7 +15,7 @@ const data = [
   },
   {
     id: 2,
-    imgsrc: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29uYXxlbnwwfHwwfHw%3D&w=1000&q=80",
+    imgsrc: "https://randomuser.me/api/portraits/men/45.jpg",
     name: "Lorem Ipsum",
     position: "Lorem Ipsum",
     breif: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta fugit eveniet, ullam deserunt inventore omnis!",
@@ -23,7 +23,7 @@ const data = [
   },
   {
     id: 3,
-    imgsrc: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29uYXxlbnwwfHwwfHw%3D&w=1000&q=80",
+    imgsrc: "https://randomuser.me/api/portraits/men/55.jpg",
     name: "Lorem Ipsum",
     position: "Lorem Ipsum",
     breif: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta fugit eveniet, ullam deserunt inventore omnis!",
