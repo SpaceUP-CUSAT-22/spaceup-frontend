@@ -13,9 +13,14 @@ import SEvent from "./Components/SSS/event";
 import SAbout from "./Components/SSS/about";
 import SFooter from "./Components/SSS/footer";
 import SNav from "./Components/SSS/navbar";
+<<<<<<< HEAD
 import SSchedule from "./Components/SSS/schedule";
 
 import { useRef, useEffect, useState } from "react";
+=======
+import SSchedule from "./Components/SSS/schedule"
+import SetTocken from "./Components/Auth";
+>>>>>>> a08d0a094361e665f43900bf7de0f3508990e582
 
 /* --------------------------------------------------
   Import Components in the Main.js file 
@@ -87,6 +92,7 @@ function App() {
           <Route path="/signup" component={Signup} />
           <Route path="/reg" component={Reg} />
           <Route path="/team" component={Fullteam} />
+          <Route path="/set_tocken" component={SetTocken} />
         </Background>
         {/* <Route component={Error}/> */}
       </Switch>
