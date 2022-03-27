@@ -9,7 +9,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        'sky-bg' : '#000000', 
+        'sky-bg': '#000000',
+        'gradient-start': '#41429f',
+        'gradient-end': '#080a31',
       },
       backgroundImage: {
         'sss-bg': "url('/src/Assets/sssAssets/Home/background-home-desktop.jpg')",

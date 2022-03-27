@@ -34,8 +34,8 @@ export default function Events() {
                     <h1 className="text-2xl font-bold text-white">MINI PLANETARIUM</h1>
                     <p className="text-base">They said the sky is not the limit, neither are the
                         stars. Let’s take a tour of all the celestial bodies
-                        you ever wondered about. The mini-planetarium is
-                        an adventure to the space-up-above us. It’s your
+                        you ever wondered about. The mini planetarium is
+                        an adventure to the SPACE-UP above us. It’s your
                         voyage to the celestial bodies with information to
                         enlighten your mind. Escape into the own world of
                         planets, stars, galaxies that we are creating as a
@@ -45,55 +45,44 @@ export default function Events() {
             </Slide>
 
             <Slide right duration={1000}>
-                <div className="flex space-y-5  p-3 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
+                <div className="flex space-y-5  p-3 flex-col items-center  bg-black  bg-blur-3xl md:max-w-xl">
                     <img src={CapsuleImage} className="w-full" alt="" />
                     <h1 className="text-2xl font-bold text-white">INTERACTIVE SESSIONS</h1>
-                    <p className="text-base">Seminars and lectures can be quite boring and
+                    <p className="text-base text-left">Seminars and lectures can be quite boring and
                         the whole idea of this event is to exchange
                         ideas. Therefore, we have planned to discuss
-                        topics,
-                        discover.
-                        ideas,
-                        wonder
-                        about
-                        opportunities with your fellow participants and
-                        host. Information that comes up when we
-                        interact with another always is a better way of
+                        topics, discover opportunities, contrive ideas and hypothecate the unknown with your fellow participants.
+                        Information that comes up when we interact with another always is a better way of
                         understanding.</p>
                 </div>
 
             </Slide>
 
             <Slide left>
-                <div className="flex space-y-5  p-3 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
+                <div className="flex space-y-5  p-3 flex-col items-center bg-black/30 bg-blur-3xl md:max-w-xl text-left">
                     <img src={CapsuleImage} className="w-full" alt="" />
 
                     <h1 className="text-2xl font-bold text-white">STUDENTS SATELLITE PROGRAM</h1>
 
-                    <p className="text-base">Founded by the team behind SPACE-UP CUSAT and
-                        supported by several university clubs such as SEDS
-                        and IRES CUSAT, the Student Program (SSP) aims to
-                        create a community that can design, fabricates, and
-                        tests
-                        space
-                        technology
-                        subsystems
-                        for
-                        consumption both domestically and internationally.</p>
+                    <p className="text-base">
+                        Founded by the team behind SPACE-UP CUSAT and
+                        supported by the national level university space club,
+                        SEDS-IRES CUSAT. The Student Satellite Program (SSP) aims to
+                        create a community that can design, fabricate and test space technology subsystems for
+                        its operation both domestically and internationally.</p>
                 </div>
 
             </Slide>
 
             <Slide bottom>
-                <div className="flex space-y-5  p-3 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
+                <div className="flex space-y-5  p-3 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl text-left">
                     <img src={CapsuleImage} className="w-full" alt="" />
                     <h1 className="text-2xl font-bold text-white">DOCUMENTARY</h1>
-                    <p className="text-base">When theoretical knowledge is integrated with
+                    <p className="text-base">When the theoretical knowledge is integrated with
                         practicality the understanding and applications
                         of that knowledge evolve on a progressive level.
-                        Space is not only for one, it belongs to
-                        everyone. With this documentary, we aim to
-                        reach everyone it inspires in society. </p>
+                        With this documentary, We aim to
+                        reach every space enthusiast in the society with a whole new element of space. </p>
                 </div>
             </Slide>
         </div>
