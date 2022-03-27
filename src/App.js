@@ -19,7 +19,6 @@ import SNav from "./Components/Navbar/Navbar";
   Import Components in the Main.js file 
   ---------------------------------------------------*/
 
-function App() {
 const Background = ({ children }) => {
   return (
     <>

@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <>
     
-      <div classNameName="parent">
+      <div classNameName="login-parent">
         <section className="ftco-section">
           <div className="container">
             <div className="row justify-content-center">
