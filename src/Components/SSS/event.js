@@ -3,16 +3,18 @@ import { Slide } from "react-reveal"
 import CapsuleImage from "../../Assets/sssAssets/Events/capsule.jpg"
 import Heading from "../Elements/Heading"
 
+
 export default function Events() {
 
-    return <div id="Sevent" className="flex flex-col min-h-screen bg-fixed bg-sss-bg-mobile sm:bg-sss-bg-tablet xl:bg-sss-bg bg-no-repeat w-full justify-center md:p-10">
+    return <div id="Sevent" className="flex z-50 flex-col min-h-screen p-5 bg-sss-bg-mobile bg-fixed bg-bottom sm:bg-sss-bg-tablet xl:bg-sss-bg bg-no-repeat bg-cover p-10 justify-center">
 
         <Heading text={"FLAGSHIP EVENTS"} />
         
-        <div className="container font-poppins grid grid-col-1 place-items-center text-gray-50 text-justify md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3">
+        <div className="container font-poppins  grid grid-col-1 place-items-center text-gray-50 text-justify md:grid-cols-1 lg:grid-cols-2 relative   xl:grid-cols-3 gap-3">
 
+ 
             <Slide left duration={1000}>
-                <div className="flex p-3 flex-col items-center bg-blur-3xl md:max-w-xl">
+                <div className="flex p-3 flex-col items-center bg-black/50 bg-blur-3xl md:max-w-xl">
                     <img src={CapsuleImage} className="w-full" alt="" />
                     <h1 className="text-2xl font-bold text-white text-center">SKY GAZING THROUGH THE LENSES</h1>
                     <p className="text-base">For centuries, humans across history have seen
@@ -29,7 +31,7 @@ export default function Events() {
             </Slide>
 
             <Slide bottom duration={1000}>
-                <div className="flex space-y-5  p-3 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
+                <div className="flex space-y-5  p-3 flex-col items-center  bg-black/50  bg-blur-3xl md:max-w-xl">
                     <img src={CapsuleImage} className="w-full" alt=""/>
                     <h1 className="text-2xl font-bold text-white">MINI PLANETARIUM</h1>
                     <p className="text-base">They said the sky is not the limit, neither are the
@@ -45,7 +47,7 @@ export default function Events() {
             </Slide>
 
             <Slide right duration={1000}>
-                <div className="flex space-y-5  p-3 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
+                <div className="flex space-y-5  p-3 flex-col items-center  bg-black/50  bg-blur-3xl md:max-w-xl">
                     <img src={CapsuleImage} className="w-full" alt="" />
                     <h1 className="text-2xl font-bold text-white">INTERACTIVE SESSIONS</h1>
                     <p className="text-base">Seminars and lectures can be quite boring and
@@ -65,7 +67,7 @@ export default function Events() {
             </Slide>
 
             <Slide left>
-                <div className="flex space-y-5  p-3 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
+                <div className="flex space-y-5  p-3 flex-col items-center  bg-black/50  bg-blur-3xl md:max-w-xl">
                     <img src={CapsuleImage} className="w-full" alt="" />
 
                     <h1 className="text-2xl font-bold text-white">STUDENTS SATELLITE PROGRAM</h1>
@@ -85,7 +87,7 @@ export default function Events() {
             </Slide>
 
             <Slide bottom>
-                <div className="flex space-y-5  p-3 flex-col items-center  bg-black/30  bg-blur-3xl md:max-w-xl">
+                <div className="flex space-y-5  p-3 flex-col items-center  bg-black/50  bg-blur-3xl md:max-w-xl">
                     <img src={CapsuleImage} className="w-full" alt="" />
                     <h1 className="text-2xl font-bold text-white">DOCUMENTARY</h1>
                     <p className="text-base">When theoretical knowledge is integrated with

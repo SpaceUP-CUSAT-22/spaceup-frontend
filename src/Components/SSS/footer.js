@@ -4,11 +4,11 @@ import Logo from "../../Assets/sssAssets/logo.png";
 function Footer() {
     return (
         <footer
-            class="text-center text-lg-start text-white"
+            className="text-center text-lg-start text-white bg-gradient-to-tl from-gray-800 to to-black  bg-blur-xl"
         >
 
-            <div class="container">
-                <div class="row">
+            <div class="grid grid-cols-2 p-5 place-items-center w-full">
+                <div class="">
                     <div class="text-left col-md-6">
                         <div id="logo">
                             <img width={200} src={Logo} className="" alt="" />
@@ -22,26 +22,19 @@ function Footer() {
                         </p>
                     </div>
 
-                    <div class="contact-info col-md-6">
-                        <h2 class="text-white">Contact</h2>
-                        <div className='contact-data d-flex justify-content-around'>
-                            <div className='contact-item'>
-                                <h5>Aslam</h5>
-                                <p className='m-1'>Organiser</p>
-                                <p><a href="tel:+4733378901">+ 01 234 567 88</a></p>
-                            </div>
-                            <div className='contact-item'>
-                                <h5>Aslam</h5>
-                                <p className='m-1'>Co Organiser</p>
-                                <p><a href="tel:+4733378901">+ 01 234 567 89</a></p>
-                            </div>
-                        </div>
-                    </div>
+                 
                 </div>
             </div>
 
+            <div className=''>
+            
+            
+            
+            </div>
+
+
             <div
-                class="text-center p-3 bg-dark-blue"
+                class="text-center p-3 bg-black"
             >
                 © 2022 SPACE-UP CUSAT. All rights reserved.
             </div>
