@@ -35,11 +35,11 @@ const Navbar = () => {
             </a>
           </div>
 
-          <nav id="navbar" className={ "navbar order-last order-lg-0 navbar-mobile"}>
+          <nav id="navbar" className={(click) ? "navbar order-last order-lg-0" : "navbar order-last order-lg-0 navbar-mobile"}>
             <ul>
               {navItems.map((item, index) => (
-                <li className="dropdown" onClick={() => setClick(!click)}>
-                  <Link className="nav-link scrollto" to={item.toLowerCase()}>{item}</Link>
+                <li className="dropdown">
+                  <Link className="nav-link scrollto" onClick={() => setClick(!click)} to={item.toLowerCase()}>{item}</Link>
                   <DropDown index={index} />
                 </li>
               ))}
