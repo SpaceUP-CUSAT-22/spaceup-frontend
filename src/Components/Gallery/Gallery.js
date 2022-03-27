@@ -11,6 +11,7 @@ import image5 from "../../Assets/gallery/5.jpg";
 import image6 from "../../Assets/gallery/6.jpg";
 import image7 from "../../Assets/gallery/7.jpg";
 import image8 from "../../Assets/gallery/8.jpg";
+import Heading from "../Elements/Heading";
 
 // import "swiper/css";
 // import "swiper/css/navigation";
@@ -24,9 +25,7 @@ const Gallery = () => {
     <>
       <div id="gallery">
         <div className="container">
-          <div className="section-header">
-            <h2>Gallery</h2>
-          </div>
+          <Heading text={"GALLERY"} />
         </div>
         <div className="gallery-grid container">
           <div className="gallery-image-container"><img src={image1} alt="" /></div>

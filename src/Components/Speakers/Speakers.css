@@ -58,7 +58,7 @@
   transform-origin: 50% 65%;
   transition: transform 1s, filter 3s ease-in-out;
   filter: brightness(80%);
-  contain: cover;
+  object-fit: cover;
   width: 100%;
   height: 15rem;
   clip-path: polygon(
@@ -131,6 +131,19 @@
   transform: scale(1.1);
 }
 
+@media (max-width: 992px) {
+  .speaker-main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  .sub {
+    width: 100%;
+  }
+}
+
 @media (max-width: 770px) {
   .speaker-main {
     display: flex;
@@ -146,6 +159,9 @@
 }
 
 @media (max-width: 550px) {
+  .speaker-main {
+    padding: 0;
+  }
   .sub {
     width: calc(100% - 2rem);
     left: 1.5rem;

@@ -54,14 +54,14 @@
 }
 
 .star1 {
-  top: 1rem;
-  left: 1rem;
+  top: 3rem;
+  left: 3rem;
   animation: shake-right 9s infinite;
 }
 
 .star2 {
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 3rem;
+  right: 3rem;
   animation: shake-left 9s infinite;
 }
 
