@@ -13,7 +13,9 @@ import SEvent from "./Components/SSS/event";
 import SAbout from "./Components/SSS/about";
 import SFooter from "./Components/SSS/footer";
 import SNav from "./Components/SSS/navbar";
-import SSchedule from "./Components/SSS/schedule"
+import SSchedule from "./Components/SSS/schedule";
+
+import { useRef, useEffect, useState } from "react";
 
 /* --------------------------------------------------
   Import Components in the Main.js file 
@@ -40,9 +42,28 @@ const Background = ({ children }) => {
 };
 
 const SSS = () => {
+  const sBody = useRef();
+  const [scroll, setScroll] = useState(0);
+  let activeScroll = 0;
+  let currentActive = 0;
+
+  useEffect(() => {
+  window.addEventListener("scroll", () => {
+      activeScroll =  window.scrollY;
+
+      for(let i=1; i<sBody.current.children.length; i++){
+        currentActive = sBody.current.children[i];
+        console.log(activeScroll, currentActive.offsetTop, currentActive.offsetTop + currentActive.offsetHeight, i);
+        if(activeScroll >= currentActive.offsetTop - 50 && activeScroll <= (currentActive.offsetTop + currentActive.offsetHeight)) {
+            setScroll(i - 1);
+        }
+    }
+
+  });
+  }, []) ;
   return (
-    <div>
-      <SNav />
+    <div ref={sBody}>
+      <SNav scroll={scroll}/>
       <SHome />
       <SAbout />
       <SEvent />
