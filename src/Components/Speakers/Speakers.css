@@ -108,9 +108,10 @@
 }
 
 .more {
+  right: -1rem;
   width: 50%;
   position: relative;
-  right: -1rem;
+  float: right;
   background-color: #f36e2d;
   clip-path: polygon(
     15% 0,
@@ -122,6 +123,7 @@
     0 40%
   );
   color: #fafafa;
+  margin-top: 15px;
   padding: 4px 10px;
   text-align: center;
 }

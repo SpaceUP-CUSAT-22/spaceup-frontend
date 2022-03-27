@@ -6,7 +6,7 @@ import shoot from "../../Assets/shoot.png";
 const Popup = (props) => {
   return (
     <div className="popup-box">
-      <div className="box">
+      <div className="box texture-bg  ">
         <span className="close-icon" onClick={props.handleClose}>
           x
         </span>

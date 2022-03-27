@@ -13,14 +13,11 @@ import SEvent from "./Components/SSS/event";
 import SAbout from "./Components/SSS/about";
 import SFooter from "./Components/SSS/footer";
 import SNav from "./Components/SSS/navbar";
-<<<<<<< HEAD
 import SSchedule from "./Components/SSS/schedule";
-
+import SSpeakers from "./Components/SSS/speakers";
 import { useRef, useEffect, useState } from "react";
-=======
-import SSchedule from "./Components/SSS/schedule"
 import SetTocken from "./Components/Auth";
->>>>>>> a08d0a094361e665f43900bf7de0f3508990e582
+import Speakers from "./Components/Speakers/Speakers.js";
 
 /* --------------------------------------------------
   Import Components in the Main.js file 
@@ -53,26 +50,27 @@ const SSS = () => {
   let currentActive = 0;
 
   useEffect(() => {
-  window.addEventListener("scroll", () => {
-      activeScroll =  window.scrollY;
+    window.addEventListener("scroll", () => {
+      activeScroll = window.scrollY;
 
-      for(let i=1; i<sBody.current.children.length; i++){
+      for (let i = 1; i < sBody.current.children.length; i++) {
         currentActive = sBody.current.children[i];
         console.log(activeScroll, currentActive.offsetTop, currentActive.offsetTop + currentActive.offsetHeight, i);
-        if(activeScroll >= currentActive.offsetTop - 50 && activeScroll <= (currentActive.offsetTop + currentActive.offsetHeight)) {
-            setScroll(i - 1);
+        if (activeScroll >= currentActive.offsetTop - 50 && activeScroll <= (currentActive.offsetTop + currentActive.offsetHeight)) {
+          setScroll(i - 1);
         }
-    }
+      }
 
-  });
-  }, []) ;
+    });
+  }, []);
   return (
     <div ref={sBody}>
-      <SNav scroll={scroll}/>
+      <SNav scroll={scroll} />
       <SHome />
       <SAbout />
       <SEvent />
-      <SSchedule/>
+      <SSchedule />
+      <SSpeakers />
       <div className="w-full h-1 border-b-4 border-orange-500 bg-sky-bg"></div>
       <SFooter />
     </div>
