@@ -14,9 +14,9 @@ module.exports = {
         'gradient-end': '#080a31',
       },
       backgroundImage: {
-        'sss-bg': "url('/src/Assets/sssAssets/Home/background-home-desktop.jpg')",
-        'sss-bg-mobile': "url('/src/Assets/sssAssets/Home/background-home-mobile.jpg')",
-        'sss-bg-tablet': "url('/src/Assets/sssAssets/Home/background-home-tablet.jpg')",
+        'sh': "url('/src/Assets/sssAssets/Home/background-home-desktop.jpg')",
+        'sh-mobile': "url('/src/Assets/sssAssets/Home/background-home-mobile.jpg')",
+        'sh-tablet': "url('/src/Assets/sssAssets/Home/background-home-tablet.jpg')",
       },
     },
   },
