@@ -3,6 +3,7 @@ import logo from "../../Assets/space_up-logo.png";
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import ham from "../../Assets/ham.svg";
+import cross from "../../Assets/cross.png";
 
 
 const Navbar = () => {
@@ -35,7 +36,8 @@ const Navbar = () => {
             </a>
           </div>
 
-          <nav id="navbar" className={(click) ? "navbar order-last order-lg-0" : "navbar order-last order-lg-0 navbar-mobile"}>
+          <nav id="navbar" className={(click) ? "navbar order-last order-lg-0 navbar-mobile" : "navbar order-last order-lg-0"}>
+            <img src={cross} className="cross" style={{ display: (click) ? "block" : "none" }} alt="" onClick={() => setClick(false)} />
             <ul>
               {navItems.map((item, index) => (
                 <li className="dropdown">
