@@ -4,44 +4,42 @@ import Logo from "../../Assets/sssAssets/logo.png";
 function Footer() {
     return (
         <footer
-            class="text-center text-lg-start text-white"
+            className="text-center text-lg-start  text-white bg-gradient-to-tl from-gray-800 to to-black  bg-blur-xl"
         >
-
-            <div class="container">
-                <div class="row">
-                    <div class="text-left col-md-6">
-                        <div id="logo">
-                            <img width={200} src={Logo} className="" alt="" />
-                        </div>
-                        <p className='mt-2'>
-                            SPACE-UP CUSAT has accessed a stellar digital congregation of so
-                            tons of Instagram followers and Facebook followers. Also
-                            extending to Twitter and LinkedIn audiences. By joining forces
-                            with SPACE UP CUSAT your brand voice will be reaching a greater
-                            audience and apprehending the minds of many.
-                        </p>
+            <div className='flex flex-col justify-center items-between md:flex-row '>
+            <div class="flex items-center w-full ">
+               
+                <div id="logo">
+                <img width={250} src={Logo} className="" alt="" />
+            </div>
+                    <div class="text-left p-3 w-full md:w-1/3">
+                   
+                        <p> SPACE-UP CUSAT has accessed a stellar digital congregation of so
+                        tons of Instagram followers and Facebook followers. Also
+                        extending to Twitter and LinkedIn audiences. By joining forces
+                        with SPACE UP CUSAT your brand voice will be reaching a greater
+                        audience and apprehending the minds of many.</p>
                     </div>
 
-                    <div class="contact-info col-md-6">
-                        <h2 class="text-white">Contact</h2>
-                        <div className='contact-data d-flex justify-content-around'>
-                            <div className='contact-item'>
-                                <h5>Aslam</h5>
-                                <p className='m-1'>Organiser</p>
-                                <p><a href="tel:+4733378901">+ 01 234 567 88</a></p>
-                            </div>
-                            <div className='contact-item'>
-                                <h5>Aslam</h5>
-                                <p className='m-1'>Co Organiser</p>
-                                <p><a href="tel:+4733378901">+ 01 234 567 89</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                  
             </div>
 
-            <div
-                class="text-center p-3 bg-dark-blue"
+            <h1 className='text-lg ml-4 text-left font-bold text-white mt-4'>Organisers</h1>
+            <div className='flex justify-between text-white text-md text-left p-4'>
+            
+            <p>Aslam + 01 234 567 88 (Organizer)</p>
+            <p>Aslam + 01 234 567 88 (Co-Organizer)</p>
+    
+    
+    
+    
+            </div>
+            </div>
+         
+
+
+            <div class="text-center p-1"
             >
                 © 2022 SPACE-UP CUSAT. All rights reserved.
             </div>
