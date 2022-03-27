@@ -6,9 +6,9 @@ import './sss.css';
 
 export default function About() {
 
-    return <div id="Sabout" className="relative flex font-poppins py-20 h-full radial-bg flex-col w-full items-center bg-contain">
+    return <div id="Sabout" className="relative flex font-poppins min-h-screen texture-bg flex-col w-full items-center bg-contain">
         <Star />
-        <div className="md:container space-y-4 my-auto md:space-y-8 text-white">
+        <div className="container space-y-4 my-auto md:space-y-8 text-white">
             <Fade bottom>
                 <Heading text="ABOUT US" />
             </Fade>

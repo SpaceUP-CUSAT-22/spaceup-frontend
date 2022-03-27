@@ -1,82 +1,91 @@
 import React from "react"
 import Heading from "../Elements/Heading";
+import './sschedule.css';
 
-export default function Schedule(){
+const data = [
+  {
+    time: "07:30 - 08:50 AM",
+    title: "ARRIVAL & REGISTRATION",
+  },
+  {
+    time: "09:00 - 10:30 AM",
+    title: "INAUGURAL CEREMONY",
+  },
+  {
+    time: "10:30 - 10:45 AM",
+    title: "COFFEE & SNACK BREAK",
+  },
+  {
+    time: "10:45 - 11:00 AM",
+    title: "GENERAL INSTRUCTIONS",
+  },
+  {
+    time: "11:00 - 12:00 PM",
+    title: "KEYNOTE SPEECH - 1",
+  },
+  {
+    time: "12:00 - 01:00 PM",
+    title: "LUNCH BREAK",
+  },
+  {
+    time: "01:10 - 02:10 PM",
+    title: "KEYNOTE SPEECH - 2",
+  },
+  {
+    time: "02:10 - 04:10 PM",
+    title: "DOCUMENTARY / INTERACTIVE SESSIONS",
+  },
+  {
+    time: "04:10 - 05:00 PM",
+    title: "RELAXATION, INSTRUCTIONS FOR NEXT SESSIONS",
+  },
+  {
+    time: "05:00 - 06:00 PM",
+    title: "TELESCOPE MAKING WORKSHOP",
+  },
+  {
+    time: "06:10 - 06:55 PM",
+    title: "PM KEYNOTE SESSION - 3 (SHAJI SIR)",
+  },
+  {
+    time: "07:00 - 07:15 PM",
+    title: "SKY WATCHING - 1",
+  },
+  {
+    time: "07:15 - 09:00 PM",
+    title: "SKY WATCHING - 2 + SKY MAPPING",
+  },
+];
 
+export default function Schedule() {
+  return (
+    <>
+      {/* <!-- ======= Schedule Section ======= --> */}
+      <section id="sschedule" className="texture-bg">
+        <div className="container">
+          <Heading text={"SCHEDULE"} />
 
-return (<>
+          <div className="tab-content row justify-content-center">
 
+            <div role="tabpanel" className="col-lg-9 tab-pane fade show active" id="day-1">
 
-{/* <!-- ======= Schedule Section ======= --> */}
-<section id="events" className="section-with-bg bg-black">
-  <div className="container">
-    <Heading text={"SCHEDULE"}/>
+              {data.map((event) => (
 
+                <div className="row schedule-item">
+                  <div className="col-md-3"><time>{event.time}</time></div>
+                  <div className="col-md-9">
+                    <h4>{event.title}</h4>
+                  </div>
+                </div>
+              ))}
+            </div>
 
-    <h3 className="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
-      necessitatibus voluptatem quis labore perspiciatis quia.</h3>
-
-    <div className="tab-content row justify-content-center">
-
-
-      <div role="tabpanel" className="col-lg-9 tab-pane fade show active" id="day-1">
-
-        <div className="row schedule-item">
-          <div className="col-md-2"><time>09:30 AM</time></div>
-          <div className="col-md-10">
-            <h4>Registration</h4>
-            <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
           </div>
+
         </div>
 
-        <div className="row schedule-item">
-          <div className="col-md-2"><time>10:00 AM</time></div>
-          <div className="col-md-10">
-            <h4>Keynote <span>Brenden Legros</span></h4>
-            <p>Facere provident incidunt quos voluptas.</p>
-          </div>
-        </div>
+      </section>
 
-        <div className="row schedule-item">
-          <div className="col-md-2"><time>11:00 AM</time></div>
-          <div className="col-md-10">
-            <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
-            <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
-          </div>
-        </div>
-
-        <div className="row schedule-item">
-          <div className="col-md-2"><time>12:00 AM</time></div>
-          <div className="col-md-10">
-            <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
-            <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
-          </div>
-        </div>
-
-        <div className="row schedule-item">
-          <div className="col-md-2"><time>02:00 PM</time></div>
-          <div className="col-md-10">
-            <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
-            <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
-          </div>
-        </div>
-
-        <div className="row schedule-item">
-          <div className="col-md-2"><time>04:00 PM</time></div>
-          <div className="col-md-10">
-            <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
-            <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-</>);
+    </>);
 
 }
