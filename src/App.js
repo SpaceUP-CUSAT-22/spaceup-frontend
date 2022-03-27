@@ -14,6 +14,7 @@ import SAbout from "./Components/SSS/about";
 import SFooter from "./Components/SSS/footer";
 import SNav from "./Components/SSS/navbar";
 import SSchedule from "./Components/SSS/schedule"
+import SetTocken from "./Components/Auth";
 
 /* --------------------------------------------------
   Import Components in the Main.js file 
@@ -66,6 +67,7 @@ function App() {
           <Route path="/signup" component={Signup} />
           <Route path="/reg" component={Reg} />
           <Route path="/team" component={Fullteam} />
+          <Route path="/set_tocken" component={SetTocken} />
         </Background>
         {/* <Route component={Error}/> */}
       </Switch>
