@@ -56,7 +56,7 @@ const SSS = () => {
 
       for (let i = 1; i < sBody.current.children.length; i++) {
         currentActive = sBody.current.children[i];
-        console.log(activeScroll, currentActive.offsetTop, currentActive.offsetTop + currentActive.offsetHeight, i);
+        // console.log(activeScroll, currentActive.offsetTop, currentActive.offsetTop + currentActive.offsetHeight, i);
         if (activeScroll >= currentActive.offsetTop - 50 && activeScroll <= (currentActive.offsetTop + currentActive.offsetHeight)) {
           setScroll(i - 1);
         }
