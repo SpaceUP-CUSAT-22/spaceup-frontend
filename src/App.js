@@ -19,6 +19,7 @@ import SMap from './Components/SSS/map';
 import { useRef, useEffect, useState } from "react";
 import SetTocken from "./Components/Auth";
 import Speakers from "./Components/Speakers/Speakers.js";
+import Video from "./Components/video";
 
 /* --------------------------------------------------
   Import Components in the Main.js file 
@@ -87,7 +88,7 @@ function App() {
       <Switch>
         <Route path="/sss" component={SSS} />
         <Background>
-          <Route exact path="/" component={Main} />
+          <Route exact path="/" component={Video} />
           <Route path="/login" component={Login} />
           <Route path="/signup" component={Signup} />
           <Route path="/reg" component={Reg} />

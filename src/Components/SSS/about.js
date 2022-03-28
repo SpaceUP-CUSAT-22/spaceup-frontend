@@ -1,7 +1,6 @@
 import React from "react";
 import { Fade } from "react-reveal";
 import Heading from "../Elements/Heading";
-import Star from "../Stars/Star";
 import './sss.css';
 
 export default function About() {
