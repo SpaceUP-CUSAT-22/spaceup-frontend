@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import logo from "../../Assets/space_up-logo.png";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import ham from "../../Assets/ham.svg";
 import cross from "../../Assets/cross.png";
@@ -74,23 +74,3 @@ const Navbar = ({ scroll }) => {
 }
 
 export default Navbar;
-
-// const DropDown = ({ index }) => {
-//   const dropItems = ["Event Chart", "Flagship Event"];
-
-//   if (index === 3) {
-//     return (
-//       <>
-//         <ul>
-//           {dropItems.map((item) => (
-//             <li><a href="/">{item}</a></li>
-//           ))}
-//         </ul>
-
-//       </>
-//     );
-//   }
-//   else {
-//     return null;
-//   }
-// }
