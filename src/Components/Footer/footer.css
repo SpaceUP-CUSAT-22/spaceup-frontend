@@ -1,9 +1,7 @@
-.section-orange {
-  background-color: #e2630e;
-}
 
 footer {
   background: #020225;
+  height: 30vh;
 }
 
 .contact-info {
@@ -16,9 +14,7 @@ footer {
   text-decoration: underline;
 }
 
-.contact-item {
-    margin: 2rem;
-}
+
 
 .contact-item h5 {
     color: #fff;
@@ -28,9 +24,7 @@ footer {
   margin: 0 auto;
 }
 
-.section-dark {
-  padding: 2rem !important;
-}
+
 
 .bg-dark-blue {
   background-color: #050e20;
