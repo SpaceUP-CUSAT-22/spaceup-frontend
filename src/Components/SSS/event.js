@@ -3,17 +3,45 @@ import {Fade} from "react-reveal";
 import range from "lodash/range";
 import styled from "styled-components";
 import ItemsCarousel from "react-items-carousel";
+import Heading from "../Elements/Heading";
+import gazing from "../../Assets/star-gazing.jpg"; 
 
-const para = ["For centuries, humans across history have seen the same sky and looked at the patterns of stars like beautiful lanterns hanging in the sky. But, since the discovery of telescopes, nothing comes close to diving deep into the magnificence of stars, planets and moons. On this day, gazing at the wonders of the night sky is made more fun by watching it together. Everyone sees the world differently and what\'s better than finding out how others view the same sky"
+const content = [
+    {
+        image: gazing,
+        title: "SKY GAZING THROUGH THE LENSES",
+        text: "For centuries, humans across history have seen the same sky and looked at the patterns of stars like beautiful lanterns hanging in the sky. But, since the discovery of telescopes, nothing comes close to diving deep into the magnificence of stars, planets and moons. On this day, gazing at the wonders of the night sky is made more fun by watching it together. Everyone sees the world differently and what's better than finding out how others view the same sky"
+    },
+    {
+        image: gazing,
+        title: "INTERACTIVE SESSIONS",
+        text: "Seminars and lectures can be quite boring and the whole idea of this event is to exchange ideas. Therefore, we have planned to discuss topics, discover opportunities, contrive ideas and hypothecate the unknown with your fellow participants. Information that comes up when we interact with another always is a better way of understanding."
+    },
+    {
+        image: gazing,
+        title: "MINI PLANETARIUM",
+        text: "They said the sky is not the limit, neither are the stars. Let's take a tour of all the celestial bodies you ever wondered about. The mini planetarium is an adventure to the SPACE-UP above us. It’s your voyage to the celestial bodies with information to enlighten your mind. Escape into the own world of planets, stars, galaxies that we are creating as a team for you to apprehend the lives and sight of astronauts through your own eyes"
+    },
+    {
+        image: gazing,
+        title: "STUDENTS SATELLITE PROGRAM",
+        text: "Founded by the team behind SPACE-UP CUSAT and supported by the national level university space club, SEDS-IRES CUSAT. The Student Satellite Program (SSP) aims to create a community that can design, fabricate and test space technology subsystems for its operation both domestically and internationally"
+    },
+    {
+        image: gazing,
+        title: "DOCUMENTARY",
+        text: "When the theoretical knowledge is integrated with practicality the understanding and applications of that knowledge evolve on a progressive level. With this documentary, We aim to reach every space enthusiast in the society with a whole new element of space"
+    }
+    
 ]
-const noOfItems = 4;
+const noOfItems = content.length;
 const noOfCards = 3;
 const autoPlayDelay = 2000;
 const chevronWidth = 40;
 
 const Wrapper = styled.div`
 padding: 0 ${chevronWidth}px;
-  max-width: 1460px;
+  max-width: 1440px;
   margin: 0 auto;
 `;
 
@@ -28,23 +56,53 @@ const SlideItem = styled.div`
   font-weight: bold;
 `;
 
+
 const carouselItems = range(noOfItems).map(index => (
   <SlideItem key={index}>
       <div className="events-div">
-        <img src={`https://picsum.photos/id/${index}/400/360`} alt=""/>
-        <p className="events-para">{para[0]}</p>
+        <img src={content[index].image} alt=""/>
+        <p className="events-para">{content[index].text}</p>
+        <h4 className="events-head">{content[index].title}</h4>
       </div>
       
     </SlideItem>
 ));
 
 export default class Mission extends React.Component {
-  state = {
-    activeItemIndex: 0
-  };
+    constructor() {
+        super();
+        this.state = {
+            activeItemIndex: 0,
+            num: 3
+        };
+    }
+
+    updateDimensions() {
+        let updateWidth = window.innerWidth;
+        
+
+        if(updateWidth < 900 && updateWidth > 600) {
+            this.setState({num: 2})
+        }
+        else if(updateWidth < 600) {
+            this.setState({num: 1})
+        }
+        else {
+            this.setState({num: 3})
+        }
+
+        console.log(this.state.num);
+      }
+
 
   componentDidMount() {
     this.interval = setInterval(this.tick, autoPlayDelay);
+    this.updateDimensions();
+    window.addEventListener("resize", this.updateDimensions.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDimensions.bind(this));
   }
 
   componentWillUnmount() {
@@ -59,14 +117,20 @@ export default class Mission extends React.Component {
 
   onChange = value => this.setState({ activeItemIndex: value });
 
+
   render() {
+
+
     return (
         <>
-        <div className="sevents-parent flex flex-col items-center justify-center bg-sh-mobile sm:bg-sh-tablet md:bg-sh bg-no-repeat bg-fixed bg-cover">
+            <div className="sevents-parent flex flex-col items-center justify-center bg-sh-mobile sm:bg-sh-tablet md:bg-sh bg-no-repeat bg-fixed bg-cover">
+            <Fade bottom>
+                <Heading text="STUDENTS' SPACE SUMMIT" />
+            </Fade>
         <Wrapper>
         <ItemsCarousel
-          gutter={30}
-          numberOfCards={noOfCards}
+          gutter={80}
+          numberOfCards={this.state.num}
           activeItemIndex={this.state.activeItemIndex}
           requestToChangeActive={this.onChange}
           rightChevron={<button>{">"}</button>}

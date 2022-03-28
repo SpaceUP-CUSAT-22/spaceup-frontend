@@ -20,16 +20,45 @@
 
 .sevents-parent {
     width: 100%;
-    height: 60rem;
+    height: 40rem;
 }
 
 .events-div {
     position: relative;
+    width: 400px;
+    height: 360px;
+    overflow: hidden;
+}
 
+.events-div > img {
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.events-head{
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
+    color: white;
+    font-size: 16px;
+    width: 60%;
+    text-align: end;
+}
+
+.events-div:hover > img {
+    transform: scale(1.1);
+}
+
+.events-div:hover > .events-para {
+    opacity: 1;
 }
 
 
 .events-para {
+    opacity: 0;
+    padding: 0 1rem 0 1rem;
+    margin-top: 1rem;
     position: absolute;
     width: 50%;
     top: 0;
@@ -39,7 +68,11 @@
     color: white;
     border-right: 1px solid #fff; 
     line-height: 1.1;
+    transition: opacity 0.5s ease-in-out;
+    text-align: end;
 }
+
+
 
 
 /* :root {
