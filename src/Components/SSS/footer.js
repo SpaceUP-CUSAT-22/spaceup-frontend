@@ -1,49 +1,52 @@
-import '../Footer/footer.css';
 import Logo from "../../Assets/sssAssets/logo.png";
 
 function Footer() {
     return (
-        <footer
-            className="text-center text-lg-start  text-white bg-gradient-to-tl from-gray-800 to to-black  bg-blur-xl"
+        <div
+            class="text-center text-lg-start text-white texture-bg font-poppins"
         >
-            <div className='flex flex-col justify-center items-between md:flex-row '>
-            <div class="flex items-center w-full ">
-               
-                <div id="logo">
-                <img width={250} src={Logo} className="" alt="" />
-            </div>
-                    <div class="text-left p-3 w-full md:w-1/3">
-                   
-                        <p> SPACE-UP CUSAT has accessed a stellar digital congregation of so
-                        tons of Instagram followers and Facebook followers. Also
-                        extending to Twitter and LinkedIn audiences. By joining forces
-                        with SPACE UP CUSAT your brand voice will be reaching a greater
-                        audience and apprehending the minds of many.</p>
+            <div class="container p-4 pb-0">
+                <section class="">
+                    <div class="flex flex-row">
+
+                        <div class="mx-auto mt-3 text-left md:text-center flex-1">
+                            <h6 class="text-uppercase mb-4 font-bold text-xl font-merry">Quick Links</h6>
+                            <p>
+                                <a class="text-white no-underline">Terms and Condition</a>
+                            </p>
+                            <p>
+                                <a class="text-white no-underline">Refund Policy</a>
+                            </p>
+                        </div>
+
+                        <hr className="md:hidden my-4 w-11/12"></hr>
+
+                        <div class="mx-auto mt-3 my-auto flex-1">
+                            <img src={Logo} alt="sss logo" className="w-1/4 md:w-3/5 mx-auto" />
+                        </div>
+
+                        <hr className="md:hidden my-4 w-11/12"></hr>
+
+                        <div class="mx-auto mt-3 text-right md:text-center flex-1">
+                            <h6 class="text-uppercase mb-4 font-bold text-xl font-merry">Organisers</h6>
+                            <p className="mb-1">Mohammed Aslam</p>
+                            <p className="mb-1">+91 95393 33732</p>
+                            <p className="mb-1">R Nehha Mariam</p>
+                            <p className="mb-1">+91 75940 66423</p>
+                        </div>
                     </div>
-
-
-                  
+                </section>
             </div>
 
-            <h1 className='text-lg ml-4 text-left font-bold text-white mt-4'>Organisers</h1>
-            <div className='flex justify-between text-white text-md text-left p-4'>
-            
-            <p>Aslam + 01 234 567 88 (Organizer)</p>
-            <p>Aslam + 01 234 567 88 (Co-Organizer)</p>
-    
-    
-    
-    
-            </div>
-            </div>
-         
-
-
-            <div class="text-center p-1"
+            <div
+                class="text-center p-3"
             >
-                © 2022 SPACE-UP CUSAT. All rights reserved.
+                © 2022 |
+                <strong><a class="text-white no-underline" href="https://spaceupcusat.org/"
+                > spaceupcusat.org</a
+                ></strong>
             </div>
-        </footer>
+        </div>
     );
 }
 

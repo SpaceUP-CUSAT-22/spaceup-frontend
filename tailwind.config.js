@@ -6,6 +6,7 @@ module.exports = {
     fontFamily: {
       'nasa': ['nasamedium', 'sans-serif'],
       'poppins': ['Poppins', 'sans-serif'],
+      'merry': ['Merriweather Sans', 'sans-serif'],
     },
     extend: {
       colors: {

@@ -1,13 +1,11 @@
 import "./About.css";
 import pic from "../../Assets/about-bg.jpg";
-import Star from "../Stars/Star";
 import Heading from "../Elements/Heading";
 
 const About = () => {
   return (
     <>
       <div className="parent" id="about">
-        <Star />
         <div className="container">
           <div className="col-lg-12">
             <Heading text={"ABOUT US"} />
