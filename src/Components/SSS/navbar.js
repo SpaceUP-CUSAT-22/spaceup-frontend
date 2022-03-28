@@ -7,7 +7,7 @@ import cross from "../../Assets/cross.png";
 
 
 const Navbar = ({ scroll }) => {
-    const navItems = ["Home", "About", "Events", "Schedule", "Speakers"];
+    const navItems = ["Home", "About", "Events", "Schedule", "Speakers", "Map"];
 
     const [state, setState] = useState(true);
     const [click, setClick] = useState(false);

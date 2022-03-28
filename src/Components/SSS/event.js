@@ -127,7 +127,7 @@ export default class Mission extends React.Component {
 
     return (
         <>
-            <div className="sevents-parent flex flex-col items-center justify-center bg-sh-mobile sm:bg-sh-tablet md:bg-sh bg-no-repeat bg-fixed bg-cover">
+            <div id="Sevents" className="sevents-parent flex flex-col items-center justify-center bg-sh-mobile sm:bg-sh-tablet md:bg-sh bg-no-repeat bg-fixed bg-cover">
             <Fade bottom>
                 <Heading text="STUDENTS' SPACE SUMMIT" />
             </Fade>
