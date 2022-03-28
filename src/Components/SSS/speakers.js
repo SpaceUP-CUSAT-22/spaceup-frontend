@@ -54,10 +54,10 @@ export default function Speakers() {
                             <div className="speaker-content">
                                 <h2 className="speaker-name">{speaker.name}</h2>
                                 <h4 className="speaker-position">{speaker.position}</h4>
-                                <div onClick={togglePopup} className="more">
+                                {/* <div onClick={togglePopup} className="more">
                                     {"Read More..."}
-                                </div>
-                                {isOpen && (
+                                </div> */}
+                                {/* {isOpen && (
                                     <Popup
                                         content={
                                             <>
@@ -69,7 +69,7 @@ export default function Speakers() {
                                         }
                                         handleClose={togglePopup}
                                     />
-                                )}
+                                )} */}
                             </div>
                         </div>
                     ))}

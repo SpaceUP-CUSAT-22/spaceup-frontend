@@ -73,7 +73,7 @@ export default function Schedule() {
 
                 <div className="row schedule-item">
                   <div className="col-md-3"><time>{event.time}</time></div>
-                  <div className="col-md-9">
+                  <div className="col-md-9 border-l">
                     <h4>{event.title}</h4>
                   </div>
                 </div>
