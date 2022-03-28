@@ -65,6 +65,13 @@ const SSS = () => {
 
     });
   }, []);
+
+  setTimeout(() => {
+
+
+  }, 5000)
+
+
   return (
     <div ref={sBody}>
       <SNav scroll={scroll} />
