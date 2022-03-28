@@ -4,7 +4,11 @@ import range from "lodash/range";
 import styled from "styled-components";
 import ItemsCarousel from "react-items-carousel";
 import Heading from "../Elements/Heading";
-import gazing from "../../Assets/star-gazing.jpg"; 
+import gazing from "../../Assets/sss-event/star-gazing.jpg"; 
+import interactive_session from "../../Assets/sss-event/interactive-session.jpg";
+import planetarium from "../../Assets/sss-event/planetarium.jpg";
+import satellite from "../../Assets/sss-event/satellite.png";
+import documentary from "../../Assets/sss-event/documentary.jpg";
 
 const content = [
     {
@@ -13,22 +17,22 @@ const content = [
         text: "For centuries, humans across history have seen the same sky and looked at the patterns of stars like beautiful lanterns hanging in the sky. But, since the discovery of telescopes, nothing comes close to diving deep into the magnificence of stars, planets and moons. On this day, gazing at the wonders of the night sky is made more fun by watching it together. Everyone sees the world differently and what's better than finding out how others view the same sky"
     },
     {
-        image: gazing,
+        image: interactive_session,
         title: "INTERACTIVE SESSIONS",
         text: "Seminars and lectures can be quite boring and the whole idea of this event is to exchange ideas. Therefore, we have planned to discuss topics, discover opportunities, contrive ideas and hypothecate the unknown with your fellow participants. Information that comes up when we interact with another always is a better way of understanding."
     },
     {
-        image: gazing,
+        image: planetarium,
         title: "MINI PLANETARIUM",
         text: "They said the sky is not the limit, neither are the stars. Let's take a tour of all the celestial bodies you ever wondered about. The mini planetarium is an adventure to the SPACE-UP above us. It’s your voyage to the celestial bodies with information to enlighten your mind. Escape into the own world of planets, stars, galaxies that we are creating as a team for you to apprehend the lives and sight of astronauts through your own eyes"
     },
     {
-        image: gazing,
+        image: satellite,
         title: "STUDENTS SATELLITE PROGRAM",
         text: "Founded by the team behind SPACE-UP CUSAT and supported by the national level university space club, SEDS-IRES CUSAT. The Student Satellite Program (SSP) aims to create a community that can design, fabricate and test space technology subsystems for its operation both domestically and internationally"
     },
     {
-        image: gazing,
+        image: documentary,
         title: "DOCUMENTARY",
         text: "When the theoretical knowledge is integrated with practicality the understanding and applications of that knowledge evolve on a progressive level. With this documentary, We aim to reach every space enthusiast in the society with a whole new element of space"
     }
