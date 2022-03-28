@@ -45,7 +45,7 @@ const chevronWidth = 40;
 
 const Wrapper = styled.div`
 padding: 0 ${chevronWidth}px;
-  max-width: 1440px;
+  max-width: 95%;
   margin: 0 auto;
 `;
 
@@ -85,10 +85,10 @@ export default class Mission extends React.Component {
         let updateWidth = window.innerWidth;
         
 
-        if(updateWidth < 900 && updateWidth > 600) {
+        if(updateWidth < 1440 && updateWidth > 980) {
             this.setState({num: 2})
         }
-        else if(updateWidth < 600) {
+        else if(updateWidth < 980) {
             this.setState({num: 1})
         }
         else {
