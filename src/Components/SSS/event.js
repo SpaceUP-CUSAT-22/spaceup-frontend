@@ -4,12 +4,7 @@ import range from "lodash/range";
 import styled from "styled-components";
 import ItemsCarousel from "react-items-carousel";
 
-const para = ["For centuries, humans across history have seen the same sky and looked at the patterns of stars like beautiful lanterns hanging in the sky. But, since the discovery of telescopes, nothing comes close to diving deep into the magnificence of"
-//                         stars, planets and moons. On this day, gazing at
-//                         the wonders of the night sky is made more fun
-//                         by watching it together. Everyone sees the world
-//                         differently and what’s better than finding out
-//                         how others view the same sky"
+const para = ["For centuries, humans across history have seen the same sky and looked at the patterns of stars like beautiful lanterns hanging in the sky. But, since the discovery of telescopes, nothing comes close to diving deep into the magnificence of stars, planets and moons. On this day, gazing at the wonders of the night sky is made more fun by watching it together. Everyone sees the world differently and what\'s better than finding out how others view the same sky"
 ]
 const noOfItems = 4;
 const noOfCards = 3;
@@ -17,7 +12,7 @@ const autoPlayDelay = 2000;
 const chevronWidth = 40;
 
 const Wrapper = styled.div`
-  padding: 0 ${chevronWidth}px;
+padding: 0 ${chevronWidth}px;
   max-width: 1460px;
   margin: 0 auto;
 `;
@@ -35,9 +30,9 @@ const SlideItem = styled.div`
 
 const carouselItems = range(noOfItems).map(index => (
   <SlideItem key={index}>
-      <div>
-        <img src={`https://picsum.photos/id/${index}/400/400`} alt=""/>
-        <p>{para[0]}</p>
+      <div className="events-div">
+        <img src={`https://picsum.photos/id/${index}/400/360`} alt=""/>
+        <p className="events-para">{para[0]}</p>
       </div>
       
     </SlideItem>
@@ -66,7 +61,9 @@ export default class Mission extends React.Component {
 
   render() {
     return (
-      <Wrapper>
+        <>
+        <div className="sevents-parent flex flex-col items-center justify-center bg-sh-mobile sm:bg-sh-tablet md:bg-sh bg-no-repeat bg-fixed bg-cover">
+        <Wrapper>
         <ItemsCarousel
           gutter={30}
           numberOfCards={noOfCards}
@@ -79,6 +76,8 @@ export default class Mission extends React.Component {
           children={carouselItems}
         />
       </Wrapper>
+            </div>
+        </>
     );
   }
 }
