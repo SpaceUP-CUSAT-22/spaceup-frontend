@@ -8,6 +8,15 @@
   position: relative;
 }
 
+#Sspeakers {
+  padding: 6rem 0 4rem;
+  color: whitesmoke;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
 .speakers-head h2 {
   color: white;
   font-family: "nasamedium";
@@ -35,7 +44,7 @@
 }
 
 .sub {
-  background-color: rgba(255, 255, 255, 0.137);
+  background-color: rgba(11, 3, 41, 0.856);
   color: #fff;
   align-items: center;
   justify-content: space-around;
@@ -43,6 +52,17 @@
   position: relative;
   display: flex;
   width: calc(50% - 2rem);
+}
+
+.sub::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   
+  z-index: -1;
 }
 
 .speaker-img {
