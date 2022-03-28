@@ -178,7 +178,7 @@ export default class Mission extends React.Component {
 
 // export default function Events() {
 
-//     return <div id="Sevent" className="flex z-50 flex-col min-h-screen p-5 bg-sss-bg-mobile bg-fixed bg-bottom sm:bg-sss-bg-tablet xl:bg-sss-bg bg-no-repeat bg-cover p-10 justify-center">
+//     return <div id="Sevent" className="flex z-50 flex-col min-h-screen bg-sss-bg-mobile bg-fixed bg-bottom sm:bg-sss-bg-tablet xl:bg-sss-bg bg-no-repeat bg-cover p-10 justify-center">
 
 //         <Heading text={"FLAGSHIP EVENTS"} />
         

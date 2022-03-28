@@ -19,13 +19,9 @@ function Footer() {
                             </p>
                         </div>
 
-                        <hr className="md:hidden my-4 w-11/12"></hr>
-
-                        <div class="mx-auto mt-3 my-auto flex-1">
+                        <div class="mx-auto mt-3 my-auto flex-1 hidden sm:block">
                             <img src={Logo} alt="sss logo" className="w-1/4 md:w-3/5 mx-auto" />
                         </div>
-
-                        <hr className="md:hidden my-4 w-11/12"></hr>
 
                         <div class="mx-auto mt-3 text-right md:text-center flex-1">
                             <h6 class="text-uppercase mb-4 font-bold text-xl font-merry">Organisers</h6>
