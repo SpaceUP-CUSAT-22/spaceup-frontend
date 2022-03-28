@@ -61,7 +61,7 @@ export default function Schedule() {
   return (
     <>
       {/* <!-- ======= Schedule Section ======= --> */}
-      <section id="sschedule" className="texture-bg">
+      <section id="Sschedule" className="texture-bg">
         <div className="container">
           <Heading text={"SCHEDULE"} />
 
