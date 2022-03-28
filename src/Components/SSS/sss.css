@@ -30,6 +30,7 @@
     width: 400px;
     height: 360px;
     overflow: hidden;
+    
 }
 
 .events-div > img {
@@ -52,6 +53,21 @@
     transform: scale(1.1);
 }
 
+.events-div::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+
+}
+
+.events-div:hover ~ .events-div::before {
+  backdrop-filter: blur(2px);
+}
+
 .events-div:hover > .events-para {
     opacity: 1;
 }
@@ -72,4 +88,15 @@
     line-height: 1.1;
     transition: opacity 0.5s ease-in-out;
     text-align: end;
+    backdrop-filter: blur(12px);
+
+}
+
+@media screen and (max-width: 500px) {
+  .events-head { 
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    right: 0%;
+  }
 }
