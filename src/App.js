@@ -15,6 +15,7 @@ import SFooter from "./Components/SSS/footer";
 import SNav from "./Components/SSS/navbar";
 import SSchedule from "./Components/SSS/schedule";
 import SSpeakers from "./Components/SSS/speakers";
+import SMap from './Components/SSS/map';
 import { useRef, useEffect, useState } from "react";
 import SetTocken from "./Components/Auth";
 import Speakers from "./Components/Speakers/Speakers.js";
@@ -71,6 +72,7 @@ const SSS = () => {
       <SEvent />
       <SSchedule />
       <SSpeakers />
+      <SMap />
       <div className="w-full h-1 border-b-4 border-orange-500 bg-sky-bg"></div>
       <SFooter />
     </div>

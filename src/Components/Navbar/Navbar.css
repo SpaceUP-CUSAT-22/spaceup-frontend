@@ -62,27 +62,10 @@
   height: 70px;
 }
 
-#header #logo h1 {
-  font-size: 36px;
-  margin: 0;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-#header #logo h1 span {
-  color: #f36e2c;
-}
-
-#header #logo h1 a,
-#header #logo h1 a:hover {
-  color: #fff;
-}
-
 #header #logo img {
   padding: 0;
   margin: 0;
-  /* max-height: 40px; */
+  max-height: 40px;
 }
 
 /* @media (max-width: 992px) {
@@ -288,7 +271,7 @@
     top: 15px;
     right: 15px;
   }
-  
+
   .navbar-mobile ul {
     display: block;
     position: absolute;
@@ -301,33 +284,33 @@
     overflow-y: auto;
     transition: 0.3s;
   }
-  
+
   .navbar-mobile > ul > li {
     padding: 0;
   }
-  
+
   .navbar-mobile a:hover:before,
   .navbar-mobile li:hover > a:before,
   .navbar-mobile .active:before {
     visibility: hidden;
   }
-  
+
   .navbar-mobile a {
     padding: 10px 20px;
     font-size: 15px;
     color: #060c22;
   }
-  
+
   .navbar-mobile a:hover,
   .navbar-mobile .active,
   .navbar-mobile li:hover > a {
     color: #f36e2c;
   }
-  
+
   .navbar-mobile .getstarted {
     margin: 15px;
   }
-  
+
   .navbar-mobile .dropdown ul {
     position: static;
     display: none;
@@ -339,32 +322,29 @@
     background: rgb(20, 18, 124);
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   }
-  
+
   .navbar-mobile .dropdown ul li {
     min-width: 200px;
   }
-  
+
   .navbar-mobile .dropdown ul a {
     padding: 10px 20px;
   }
-  
+
   .navbar-mobile .dropdown ul a i {
     font-size: 12px;
   }
-  
+
   .navbar-mobile .dropdown ul a:hover,
   .navbar-mobile .dropdown ul .active:hover,
   .navbar-mobile .dropdown ul li:hover > a {
     color: #f36e2c;
   }
-  
+
   .navbar-mobile .dropdown > .dropdown-active {
     display: block;
-  } 
-
+  }
 }
-
-
 
 .nav-parent {
   width: 95%;
@@ -373,11 +353,11 @@
   align-items: center;
   justify-content: space-between;
 }
-
+/* 
 #logo a img {
   width: 116.52px;
   height: 60px;
-}
+} */
 
 .social-media {
   width: 116px;
@@ -385,7 +365,6 @@
   justify-content: space-around;
   align-items: center;
 }
-
 
 .ham {
   display: none;

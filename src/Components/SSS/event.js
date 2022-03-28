@@ -66,6 +66,7 @@ export default class Mission extends React.Component {
 
   render() {
     return (
+      <div id="Sevent">
       <Wrapper>
         <ItemsCarousel
           gutter={30}
@@ -79,6 +80,7 @@ export default class Mission extends React.Component {
           children={carouselItems}
         />
       </Wrapper>
+      </div>
     );
   }
 }

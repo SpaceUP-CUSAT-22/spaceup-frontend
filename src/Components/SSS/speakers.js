@@ -39,7 +39,7 @@ export default function Speakers() {
     };
 
     return (
-        <section id="speakers">
+        <section id="Sspeakers" className="bg-sh-mobile sm:bg-sh-tablet md:bg-sh bg-no-repeat bg-fixed bg-cover">
             <div className="container">
                 <Heading text={"SPEAKERS"} />
                 <div className="speaker-main">

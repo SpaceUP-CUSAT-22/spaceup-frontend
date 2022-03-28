@@ -19,7 +19,7 @@ export default function About() {
             </Fade>
 
         </div>
-        <div className="container space-y-4 my-auto md:space-y-8 text-white">
+        <div className="container space-y-4 my-auto md:space-y-8 text-white pt-20">
             <Fade bottom>
                 <Heading text="ABOUT US" />
             </Fade>

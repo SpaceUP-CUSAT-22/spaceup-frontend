@@ -1,5 +1,5 @@
 import "../Navbar/Navbar.css";
-import logo from "../../Assets/space_up-logo.png";
+import logo from "../../Assets/space_up_logo_old.png";
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import ham from "../../Assets/ham.svg";
@@ -7,7 +7,7 @@ import cross from "../../Assets/cross.png";
 
 
 const Navbar = ({ scroll }) => {
-    const navItems = ["Home", "About", "Events", "Gallery"];
+    const navItems = ["Home", "About", "Events", "Schedule", "Speakers"];
 
     const [state, setState] = useState(true);
     const [click, setClick] = useState(false);
