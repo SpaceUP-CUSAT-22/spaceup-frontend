@@ -1,7 +1,5 @@
 import React from "react";
 import "./style.css";
-import bgimage from "../../Assets/earth.png";
-import shoot from "../../Assets/shoot.png";
 
 const Popup = (props) => {
   return (

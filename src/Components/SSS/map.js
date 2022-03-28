@@ -1,5 +1,3 @@
-import Heading from "../Elements/Heading";
-
 const Map = () => {
     return (
         <>

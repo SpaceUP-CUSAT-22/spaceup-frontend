@@ -107,9 +107,6 @@ export default class Mission extends React.Component {
 
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateDimensions.bind(this));
-  }
-
-  componentWillUnmount() {
     clearInterval(this.interval);
   }
 
