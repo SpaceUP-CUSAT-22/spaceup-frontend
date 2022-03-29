@@ -45,7 +45,7 @@ const data = [
   },
   {
     time: "06:10 - 06:55 PM",
-    title: "PM KEYNOTE SESSION - 3 (SHAJI SIR)",
+    title: "KEYNOTE SPEECH - 3",
   },
   {
     time: "07:00 - 07:15 PM",

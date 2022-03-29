@@ -12,7 +12,7 @@ const data = [
         id: 1,
         imgsrc: speaker1,
         name: "Murugesan Vijayarajan",
-        position: "Rocket Scientist(retd), VSCC",
+        position: "Rocket Scientist(retd), VSSC",
         body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. officia deserunt mollit anim id est laborum.",
     },
     {
