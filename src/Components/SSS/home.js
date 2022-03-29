@@ -1,6 +1,7 @@
 import React from "react";
+import './sss.css';
 import Fade from 'react-reveal/Fade';
-import Button from "../Elements/Button";
+// import Button from "../Elements/Button";
 import Pulse from "react-reveal/Pulse";
 
 import Logo from "../../Assets/sssAssets/logo.png";
@@ -17,7 +18,7 @@ export default function Home() {
                 <p className="text-gray-50 font-medium text-2xl">April 3rd 2022 at Seminar Complex, CUSAT</p>
             </Fade>
             <Pulse forever={true}>
-                <Button name="Register Now" route="/login" />
+                <a className="home-register-btn" href="https://api.spaceupcusat.org/login">Register Now</a>
             </Pulse>
         </div>
     )

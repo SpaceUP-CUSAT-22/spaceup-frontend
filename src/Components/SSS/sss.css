@@ -1,3 +1,36 @@
+.home-register-btn {
+  background: #ff5a5f;
+  color: #fff;
+  display: inline-block;
+  font-family: "Merriweather Sans", sans-serif;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 10px;
+  padding: 0 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 250px;
+  background-color: #f36e2d;
+  clip-path: polygon(
+    10% 0,
+    100% 0,
+    100% 65%,
+    90% 100%,
+    70% 100%,
+    0% 100%,
+    0 40%
+  );
+}
+
+.home-register-btn:hover {
+  transform: scale(0.5);
+  color: #fff;
+  text-decoration: none;
+}
+
 .texture-bg {
   background-color: #02021b;
   background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
@@ -10,7 +43,13 @@
 }
 
 .linear-wipe {
-  background: linear-gradient(to right, #fff 20%, #8a81be 40%, #6373cc 60%, #fff 80%);
+  background: linear-gradient(
+    to right,
+    #fff 20%,
+    #8a81be 40%,
+    #6373cc 60%,
+    #fff 80%
+  );
   background-size: 200% auto;
   background-clip: text;
   -webkit-background-clip: text;
@@ -19,38 +58,36 @@
 }
 
 .sevents-parent {
-    width: 100%;
-    height: 40rem;
-    overflow-x: hidden;
+  width: 100%;
+  height: 40rem;
+  overflow-x: hidden;
 }
 
-
 .events-div {
-    position: relative;
-    width: 400px;
-    height: 360px;
-    overflow: hidden;
-    
+  position: relative;
+  width: 400px;
+  height: 360px;
+  overflow: hidden;
 }
 
 .events-div > img {
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
-    height: 100%;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
 }
 
-.events-head{
-    position: absolute;
-    bottom: 0%;
-    right: 5%;
-    color: white;
-    font-size: 16px;
-    width: 60%;
-    text-align: end;
+.events-head {
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+  color: white;
+  font-size: 16px;
+  width: 60%;
+  text-align: end;
 }
 
 .events-div:hover > img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .events-div::before {
@@ -61,7 +98,6 @@
   width: 100%;
   height: 100%;
   z-index: 0;
-
 }
 
 .events-div:hover ~ .events-div::before {
@@ -69,31 +105,29 @@
 }
 
 .events-div:hover > .events-para {
-    opacity: 1;
+  opacity: 1;
 }
 
-
 .events-para {
-    opacity: 0;
-    padding: 0 1rem 0 1rem;
-    margin-top: 1rem;
-    position: absolute;
-    width: 50%;
-    top: 0;
-    left: 0;
-    font-size: 12px;
-    font-weight: lighter;
-    color: white;
-    border-right: 1px solid #fff; 
-    line-height: 1.1;
-    transition: opacity 0.5s ease-in-out;
-    text-align: end;
-    backdrop-filter: blur(12px);
-
+  opacity: 0;
+  padding: 0 1rem 0 1rem;
+  margin-top: 1rem;
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  font-weight: lighter;
+  color: white;
+  border-right: 1px solid #fff;
+  line-height: 1.1;
+  transition: opacity 0.5s ease-in-out;
+  text-align: end;
+  backdrop-filter: blur(12px);
 }
 
 @media screen and (max-width: 500px) {
-  .events-head { 
+  .events-head {
     width: 100%;
     font-size: 14px;
     text-align: center;
