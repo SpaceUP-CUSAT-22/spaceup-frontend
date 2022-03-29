@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Speakers/Speakers.css";
 import "reactjs-popup/dist/index.css";
-import Popup from "../Speakers/Popup";
+// import Popup from "../Speakers/Popup";
 import Heading from "../Elements/Heading";
 import speaker1 from "../../Assets/speakers/1.jpg";
 import speaker2 from "../../Assets/speakers/2.jpg";
