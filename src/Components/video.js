@@ -18,7 +18,7 @@ const Video = () => {
         // })
 
         setTimeout(() => {
-            window.location.href = 'http://localhost:3000/sss';
+            window.location.href = 'https://spaceupcusat.org/sss';
         }, 15000)
     });
 
