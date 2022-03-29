@@ -3,23 +3,30 @@ import unmute from '../Assets/unmute.svg';
 import mute from '../Assets/mute.svg';
 
 import "./video.css";
-import { useRef, useState} from 'react';
+import { useRef, useState, useEffect} from 'react';
 
 const Video = () => {
     const mutebtn = useRef();
     const [state, setState] = useState(false);
 
-    // useEffect(() => {
-    //     window.addEventListener('keypress', (event) => {
-    //         if (event.key === 'Enter') {
-    //             mutebtn.current.muted = !mutebtn.current.muted;
-    //             setState(!state);
-    //         }
-    //     })
-    // });
+    useEffect(() => {
+        // window.addEventListener('keypress', (event) => {
+        //     if (event.key === 'Enter') {
+        //         mutebtn.current.muted = !mutebtn.current.muted;
+        //         setState(!state);
+        //     }
+        // })
+
+        setTimeout(() => {
+            window.location.href = 'http://localhost:3000/sss';
+        }, 15000)
+    });
+
     const sound = () => {
         mutebtn.current.muted = !mutebtn.current.muted;
         setState(!state);
+        
+
     }
 
     return (
@@ -30,7 +37,6 @@ const Video = () => {
                 muted
                 autoPlay={"autoplay"}
                 preLoad="auto"
-                loop
             >
                 
             </video>
