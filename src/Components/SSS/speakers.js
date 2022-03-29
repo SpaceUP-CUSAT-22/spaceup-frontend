@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Speakers/Speakers.css";
 import "reactjs-popup/dist/index.css";
 // import Popup from "../Speakers/Popup";
@@ -32,11 +32,11 @@ const data = [
 ];
 
 export default function Speakers() {
-    const [isOpen, setIsOpen] = useState(false);
+    // const [isOpen, setIsOpen] = useState(false);
 
-    const togglePopup = () => {
-        setIsOpen(!isOpen);
-    };
+    // const togglePopup = () => {
+    //     setIsOpen(!isOpen);
+    // };
 
     return (
         <section id="Sspeakers" className="bg-sh-mobile sm:bg-sh-tablet md:bg-sh bg-no-repeat bg-fixed bg-cover">
