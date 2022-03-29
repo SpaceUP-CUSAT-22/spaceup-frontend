@@ -18,7 +18,7 @@ export default function Home() {
                 <p className="text-gray-50 font-medium text-2xl">April 3rd 2022 at Seminar Complex, CUSAT</p>
             </Fade>
             <Pulse forever={true}>
-                <a className="home-register-btn" href="https://api.spaceupcusat.org/login">Register Now</a>
+                <a className="home-register-btn" href="https://api.spaceupcusat.org/preevent/book">Register Now</a>
             </Pulse>
         </div>
     )
