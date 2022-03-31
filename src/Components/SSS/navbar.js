@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 import ham from "../../Assets/ham.svg";
 import cross from "../../Assets/cross.png";
 import Curtain from "../../Assets/curtain.png";
+import './sss.css';
 
 
 const Navbar = ({ scroll }) => {
@@ -31,17 +32,11 @@ const Navbar = ({ scroll }) => {
             <header id="header" className={(state) ? "d-flex align-items-center" : "d-flex align-items-center scrolled"}>
                 <div className="nav-parent">
 
-
-
-                    <div className="h-48 space flex  absolute left-3">
-                        <img src={Curtain} className="w-28 h-full" />
-                        <img src={Curtain} className=" w-28 h-full" />
-                    </div>
-                    <div id="logo">
+                    <div id="logo" className="logo_container">
                         <a href="/" className="scrollto">
-
-                            <img src={logo} className="" alt="" />
-
+                            <img src={logo} className="logo_img" alt="" />
+                            <img src={Curtain} className="curtain_img left-0" alt="curtain" />
+                            <img src={Curtain} className="curtain_img right-0" alt="curtain" />
                         </a>
                     </div>
 
