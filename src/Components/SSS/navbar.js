@@ -32,7 +32,7 @@ const Navbar = ({ scroll }) => {
             <header id="header" className={(state) ? "d-flex align-items-center" : "d-flex align-items-center scrolled"}>
                 <div className="nav-parent">
 
-                    <div id="logo" className="logo_container">
+                    <div id="logo" title="Logo Reveal on April 1st 4:30PM" className="logo_container">
                         <a href="/" className="scrollto">
                             <img src={logo} className="logo_img" alt="" />
                             <img src={Curtain} className="curtain_img left-0" alt="curtain" />
