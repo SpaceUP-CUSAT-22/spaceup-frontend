@@ -13,7 +13,7 @@ export default function About() {
 
             <Fade bottom >
                 <h1 className="text-sm sm:text-base px-4 sm:px-6 md:px-10 lg:text-lg xl:text-xl md:space-y-12 font-poppins md:leading-10 text-slate-100 text-justify">
-                    The official pre-event of SPACE-UP CUSAT that is STUDENTS' SPACE SUMMIT 2022 looks to build momentum in anticipation of our main event. This is marked by providing exposure to participants by enganging them in immensive activities and discussions leading them to learn new things about spacec. With the steady progress in the field of space, we will always need young and curious minds with their innovative ideas. The minds discuss space in a safe place and put forward their view and opinion on things relatede to it while being able to do it with the right amount of fun.
+                    The official pre-event of SPACE-UP CUSAT that is STUDENTS' SPACE SUMMIT 2022 looks to build momentum in anticipation of our main event. This is marked by providing exposure to participants by enganging them in immensive activities and discussions leading them to learn new things about space. With the steady progress in the field of space, we will always need young and curious minds with their innovative ideas. The minds discuss space in a safe place and put forward their view and opinion on things related to it while being able to do it with the right amount of fun.
                 </h1>
             </Fade>
 

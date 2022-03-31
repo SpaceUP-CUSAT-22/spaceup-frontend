@@ -17,10 +17,13 @@ export default function Home() {
             <Fade bottom duration={1000} delay={1000}>
                 <p className="text-gray-50 font-medium text-2xl">April 3rd 2022 at Seminar Complex, CUSAT</p>
             </Fade>
+            <Fade bottom duration={1000} delay={1000}>
+                <p className="text-gray-400 text-sm">For bulk booking for school students, Contact : <a className="no-underline text-gray-300 hover:text-gray-400" href="tel:+919447476081">94474 76081</a></p>
+            </Fade>
             <Pulse forever={true}>
-                <a className="home-register-btn" href="https://api.spaceupcusat.org/preevent/book">Register Now</a>
+                <a className="home-register-btn" href="https://rzp.io/l/spaceupcusat">Register Now</a>
             </Pulse>
         </div>
     )
 
-}
+}   

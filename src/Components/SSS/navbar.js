@@ -46,7 +46,7 @@ const Navbar = ({ scroll }) => {
                     </div>
 
                     <nav id="navbar" className={(click) ? "navbar order-last order-lg-0 navbar-mobile" : "navbar order-last order-lg-0"}>
-                        <img src={cross} className="cross" style={{ display: (click) ? "block" : "none" }} alt="" onClick={() => setClick(false)} />
+                        <img src={cross} className="cross" style={{ display: (click) ? " " : "none" }} alt="" onClick={() => setClick(false)} />
                         <ul>
                             {navItems.map((item, index) => (
                                 <li className="dropdown">

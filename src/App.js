@@ -95,12 +95,12 @@ function App() {
       <Switch>
         <Route path="/sss" component={SSS} />
         <Background>
-          <Route exact path="/" component={Video} />
-          <Route path="/login" component={Login} />
+          <Route path="/" component={Video} />
+          {/* <Route path="/login" component={Login} />
           <Route path="/signup" component={Signup} />
           <Route path="/reg" component={Reg} />
           <Route path="/team" component={Fullteam} />
-          <Route path="/set_tocken" component={SetTocken} />
+          <Route path="/set_tocken" component={SetTocken} /> */}
         </Background>
         {/* <Route component={Error}/> */}
       </Switch>
