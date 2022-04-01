@@ -155,7 +155,7 @@
   width: 55px;
   height: 60px;
 }
-/* 
+
 @keyframes open {
   0% {
     transform: translateX(0);
@@ -174,12 +174,17 @@
   }
 }
 
-.logo_container:hover .curtain_one{
+.curtain:hover .curtain_one{
   animation: open 3s ease-in;
-  transform: translateX(-100%);
+  transform: translateX(-100%) !important;
 }
 
-.logo_container:hover .curtain_two{
+.curtain:hover .curtain_two{
   animation: open_right 3s ease-in;
-  transform: translateX(100%);
-} */
+  transform: translateX(100%) !important;
+}
+
+.curtain-remove .curtain_two,
+.curtain-remove .curtain_one {
+  display: none;
+}

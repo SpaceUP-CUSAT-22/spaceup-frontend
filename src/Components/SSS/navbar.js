@@ -1,19 +1,24 @@
 import "../Navbar/Navbar.css";
-import logo from "../../Assets/space_up_logo_old.png";
-import { useEffect, useState } from "react";
+import logo from "../../Assets/space_up-logo.png";
+import { useEffect, useState, useRef } from "react";
 import { Link } from "react-scroll";
 import ham from "../../Assets/ham.svg";
 import cross from "../../Assets/cross.png";
 import Curtain from "../../Assets/curtain.png";
 import './sss.css';
-
+import Confetti from 'react-confetti'
 
 const Navbar = ({ scroll }) => {
     const navItems = ["Home", "About", "Events", "Schedule", "Speakers", "Map"];
 
     const [state, setState] = useState(true);
     const [click, setClick] = useState(false);
+    const [party, setParty] = useState(false);
+    const [opa, setOpa] = useState(1);
 
+    const curtainVal = useRef(null);
+
+    const size = useWindowSize()
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
@@ -27,17 +32,64 @@ const Navbar = ({ scroll }) => {
         });
 
     }, []);
+
+    function useWindowSize() {
+        // Initialize state with undefined width/height so server and client renders match
+        // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+        const [windowSize, setWindowSize] = useState({
+          width: undefined,
+          height: undefined,
+        });
+        useEffect(() => {
+          // Handler to call on window resize
+          function handleResize() {
+            // Set window width/height to state
+            setWindowSize({
+              width: window.innerWidth,
+              height: window.innerHeight,
+            });
+          }
+          // Add event listener
+          window.addEventListener("resize", handleResize);
+          // Call handler right away so state gets updated with initial window size
+          handleResize();
+          // Remove event listener on cleanup
+          return () => window.removeEventListener("resize", handleResize);
+        }, []); // Empty array ensures that effect is only run on mount
+        return windowSize;
+      }
+
+      function curtainClosed() {
+          setTimeout(()=> {
+            curtainVal.current.classList.remove("curtain");
+            curtainVal.current.classList.add("curtain-remove");
+          }, 3000)
+      }
+
+      function stopParty() {
+          setTimeout(() => {
+              setOpa(0)
+          }, 2000)
+      }
+
     return (
         <>
+            < Confetti
+                width={size.width}
+                height={size.height}
+                run={party}
+                opacity={opa}
+            />
+
             <header id="header" className={(state) ? "d-flex align-items-center" : "d-flex align-items-center scrolled"}>
                 <div className="nav-parent">
 
-                    <div id="logo" title="Logo Reveal on April 1st 4:30PM" className="logo_container">
-                        <a href="/" className="scrollto">
+                    <div id="logo" title="Logo Reveal on April 1st 4:30PM" ref={curtainVal} className="logo_container curtain" onMouseOver={()=>{setParty(true); curtainClosed()}} onMouseLeave={()=>{stopParty()}}>
+                        <span className="scrollto">
                             <img src={logo} className="logo_img" alt="" />
                             <img src={Curtain} className="curtain_img curtain_one left-0" alt="curtain" />
                             <img src={Curtain} className="curtain_img curtain_two right-0" alt="curtain" />
-                        </a>
+                        </span>
                     </div>
 
                     <nav id="navbar" className={(click) ? "navbar order-last order-lg-0 navbar-mobile" : "navbar order-last order-lg-0"}>
