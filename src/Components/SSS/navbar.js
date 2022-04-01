@@ -35,8 +35,8 @@ const Navbar = ({ scroll }) => {
                     <div id="logo" title="Logo Reveal on April 1st 4:30PM" className="logo_container">
                         <a href="/" className="scrollto">
                             <img src={logo} className="logo_img" alt="" />
-                            <img src={Curtain} className="curtain_img left-0" alt="curtain" />
-                            <img src={Curtain} className="curtain_img right-0" alt="curtain" />
+                            <img src={Curtain} className="curtain_img curtain_one left-0" alt="curtain" />
+                            <img src={Curtain} className="curtain_img curtain_two right-0" alt="curtain" />
                         </a>
                     </div>
 

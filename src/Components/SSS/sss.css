@@ -143,6 +143,7 @@
   position: relative;
   width: 120px;
   height: 50px;
+  overflow: hidden;
 }
 
 .logo_img {
@@ -154,3 +155,31 @@
   width: 55px;
   height: 60px;
 }
+/* 
+@keyframes open {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes open_right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.logo_container:hover .curtain_one{
+  animation: open 3s ease-in;
+  transform: translateX(-100%);
+}
+
+.logo_container:hover .curtain_two{
+  animation: open_right 3s ease-in;
+  transform: translateX(100%);
+} */
