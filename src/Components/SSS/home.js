@@ -11,17 +11,17 @@ import Spot from "../../sss-assets/sss_spot_registration.png"
 export default function Home() {
     
 
-    const [showModal,setShowModal]=useState(false)
+    const [showModal,setShowModal]=useState(true)
 
     const handleModal=()=>{
-        setShowModal(!showModal)
+        setShowModal(false)
     }
     useEffect(()=>{
 
         setTimeout(()=>{
             handleModal()
           
-        },8000)
+        },10000)
 
    
 
