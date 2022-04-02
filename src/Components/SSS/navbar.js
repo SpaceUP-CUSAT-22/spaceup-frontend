@@ -73,7 +73,9 @@ const Navbar = ({ scroll }) => {
       }
 
     return (
+        
         <>
+        {console.log(size)}
             < Confetti
                 width={size.width}
                 height={size.height}
