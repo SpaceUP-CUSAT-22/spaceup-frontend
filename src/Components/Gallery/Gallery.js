@@ -1,14 +1,17 @@
 import "./Gallery.css";
-
-import image1 from "../../Assets/gallery/1.jpg";
-import image2 from "../../Assets/gallery/2.jpg";
-import image3 from "../../Assets/gallery/3.jpg";
-import image4 from "../../Assets/gallery/4.jpg";
-import image5 from "../../Assets/gallery/5.jpg";
-import image6 from "../../Assets/gallery/6.jpg";
-import image7 from "../../Assets/gallery/7.jpg";
-import image8 from "../../Assets/gallery/8.jpg";
 import Heading from "../Elements/Heading";
+
+const img_urls = [
+  'https://seds-cusat.github.io/Image-Hoster/gallery/DSC_0060.NEF-min.jpg',
+  'https://seds-cusat.github.io/Image-Hoster/gallery/DSC_0064.NEF-min.jpg',
+  'https://seds-cusat.github.io/Image-Hoster/gallery/DSC_0068.NEF-min.jpg',
+  'https://seds-cusat.github.io/Image-Hoster/gallery/DSC_0198.NEF-min.jpg',
+  'https://seds-cusat.github.io/Image-Hoster/gallery/DSC_0253.NEF-min.jpg',
+  'https://seds-cusat.github.io/Image-Hoster/gallery/DSC_0268.NEF-min.jpg',
+  'https://seds-cusat.github.io/Image-Hoster/gallery/DSC_0276.NEF-min.jpg',
+  'https://seds-cusat.github.io/Image-Hoster/gallery/DSC_0290.NEF-min.jpg',
+  'https://seds-cusat.github.io/Image-Hoster/gallery/DSC_0879-min.JPG',
+];
 
 const Gallery = () => {
   return (
@@ -19,14 +22,11 @@ const Gallery = () => {
         </div>
         <div className="gallery-grid 
         container">
-          <div className="gallery-image-container"><img src={image1} alt="" /></div>
-          <div className="gallery-image-container"><img src={image2} alt="" /></div>
-          <div className="gallery-image-container"><img src={image3} alt="" /></div>
-          <div className="gallery-image-container"><img src={image4} alt="" /></div>
-          <div className="gallery-image-container"><img src={image5} alt="" /></div>
-          <div className="gallery-image-container"><img src={image6} alt="" /></div>
-          <div className="gallery-image-container"><img src={image7} alt="" /></div>
-          <div className="gallery-image-container"><img src={image8} alt="" /></div>
+          {img_urls.map((url, index) => {
+            return (
+              <div className="gallery-image-container" key={index}><img src={url} alt="gallery-images" /></div>
+            )
+          })}
         </div>
       </div>
     </>

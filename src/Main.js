@@ -5,7 +5,7 @@ import Team from "./Components/Team/Team";
 import Event from "./Components/Events/Events";
 import Gallery from "./Components/Gallery/Gallery";
 import {Milestone} from "./Components/Milestone/Milestone";
-import Footer from "./Components/Footer/footer";
+import Footer from "./Components/SSS/footer";
 import Speakers from "./Components/Speakers/Speakers";
 
 import { useRef, useEffect, useState } from "react";
@@ -39,7 +39,7 @@ const Main = () => {
             <About />
             <Event /> 
             <Milestone />
-            {/* <Team /> */}
+            <Team />
             <Speakers />
             <Gallery />
             <Footer />
