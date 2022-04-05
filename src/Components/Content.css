@@ -17,7 +17,7 @@
     }
   }
   
-  #about:before {
+  /* #about:before {
     content: "";
     background: rgba(13, 20, 41, 0.8);
     position: absolute;
@@ -25,7 +25,7 @@
     top: 0;
     left: 0;
     right: 0;
-  }
+  } */
   
   #about h2 {
     font-size: 36px;

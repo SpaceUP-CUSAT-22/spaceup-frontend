@@ -1,11 +1,13 @@
 import "./About.css";
 import pic from "../../Assets/about-bg.jpg";
 import Heading from "../Elements/Heading";
+import Stars from '../Stars/Star'
 
 const About = () => {
   return (
     <>
-      <div className="parent" id="about">
+      <div className="parent texture-bg" id="about">
+        <Stars />
         <div className="container">
           <div className="col-lg-12">
             <Heading text={"ABOUT US"} />

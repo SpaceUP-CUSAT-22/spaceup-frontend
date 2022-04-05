@@ -39,7 +39,7 @@ const Main = () => {
             <About />
             <Event /> 
             <Milestone />
-            <Team />
+            {/* <Team /> */}
             <Speakers />
             <Gallery />
             <Footer />

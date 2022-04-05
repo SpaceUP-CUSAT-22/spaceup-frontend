@@ -9,15 +9,6 @@ const Events = () => {
         <div className="container">
           <Heading text={"EVENT SCHEDULE"}/>
 
-          <ul className="nav nav-tabs" role="tablist">
-            <li className="nav-item">
-                <a className="nav-link active" href="#day-1" role="tab">Day 1</a>
-            </li>
-          </ul>
-
-          <h3 className="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
-            necessitatibus voluptatem quis labore perspiciatis quia.</h3>
-
           <div className="tab-content row justify-content-center">
 
             {/* <!-- Schdule Day 1 --> */}

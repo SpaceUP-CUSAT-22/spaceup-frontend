@@ -45,9 +45,9 @@
 }
 
 #home h1 {
-  -webkit-text-stroke: 1px white;
-  color: transparent;
-  font-size: 5rem;
+  /* -webkit-text-stroke: 1px white; */
+  color: rgb(255, 255, 255);
+  font-size: 7rem;
   font-family: 'nasamedium';
   letter-spacing: 8px;
 }
@@ -58,7 +58,7 @@
 
 @media (max-width: 991px) {
   #home h1 {
-    font-size: 34px;
+    font-size: 4rem;
   }
 }
 

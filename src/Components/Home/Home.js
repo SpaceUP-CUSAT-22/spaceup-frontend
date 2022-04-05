@@ -1,5 +1,5 @@
 import "./Home.css";
-import Typewriter from "typewriter-effect";
+// import Typewriter from "typewriter-effect";
 import Button from "../Elements/Button";
 import Pulse from "react-reveal/Pulse";
 
@@ -9,14 +9,8 @@ const Home = () => {
         <>
             <section id="home">
                 <div className="home-container">
-                    <h1 className="typing mb-4 pb-0">
-                        <Typewriter
-                            onInit={(typewriter) => {
-                                typewriter
-                                    .typeString("SPACE-UP CUSAT 2022")
-                                    .start();
-                            }}
-                        />
+                    <h1 className="linear-wipe">
+                        SPACE-UP CUSAT 2022
                     </h1>
                     <p>Pre-event on 3rd April 2022, Venue Seminar complex</p>
                     <Pulse forever={true}>
