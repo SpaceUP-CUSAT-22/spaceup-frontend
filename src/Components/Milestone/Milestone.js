@@ -3,10 +3,11 @@ import Star from "../Stars/Star";
 import Heading from "../Elements/Heading";
 import drone from "../../Assets/milestones/drone.jpg";
 import cansat from "../../Assets/milestones/cansat.jpg";
+import sup20 from "../../Assets/milestones/spaceup2020.png";
 
 const content = [
     {
-        image: "https://picsum.photos/id/237/200/300",
+        image: sup20,
         title: "SPACE-UP CUSAT 2020",
         desc: "IRES SEDS CUSAT conducted the third SPACE-UP Unconference ever in India. It was an accumulation of various collaborative events, seminars, forums and to provide the participants what is happening in the industry and to ask questions and learn from them. An opportunity to interact with some of the greats in the field."
     },
