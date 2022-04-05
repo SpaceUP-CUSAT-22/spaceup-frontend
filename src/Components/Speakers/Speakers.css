@@ -28,6 +28,14 @@
   text-align: center;
 }
 
+.my-popup-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+[data-popup='tooltip'].my-popup-overlay {
+  background: transparent;
+}
+
 .speaker-main {
   display: flexbox;
   justify-content: center;
@@ -240,4 +248,11 @@
   .speaker-img {
     width: 70%;
   }
+}
+
+.popup-content {
+  background-color: rgba(5, 5, 50, 0.795) !important;
+  color: #fafafa !important;
+  padding: 2rem !important;
+  backdrop-filter: blur(2px) !important;
 }
