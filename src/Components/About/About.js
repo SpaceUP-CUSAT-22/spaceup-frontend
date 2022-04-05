@@ -1,8 +1,8 @@
 import "./About.css";
-import pic from "../../Assets/about-bg.jpg";
+import pic from "../../Assets/team.jpeg";
 import Heading from "../Elements/Heading";
-import Stars from '../Stars/Star'
-import Slide from "react-reveal/Slide"
+import Stars from '../Stars/Star';
+import Slide from "react-reveal/Slide";
 
 const About = () => {
   return (

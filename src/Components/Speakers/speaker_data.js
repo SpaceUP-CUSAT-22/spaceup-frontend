@@ -1,3 +1,5 @@
+import nandankumar from "../../Assets/speakers/nandankumar.jpeg";
+
 const data = [
     {
         id: 1,
@@ -43,7 +45,7 @@ const data = [
     },
     {
         id: 7,
-        imgsrc: "https://randomuser.me/api/portraits/men/55.jpg",
+        imgsrc: nandankumar,
         name: "Nandakumar K",
         position: "Retired LPSC",
         body: "Nandakumar K who worked as an Engineer at LPSC. He completed his Masters of Science in Industrial Physics and Ph.D in Semiconductor Physics from Cochin  University of Science & Technology, Kerala. He worked as a Postdoctoral Fellowat CSIR-National Institute for Interdisciplinary Science and Technology,Thiruvananthapuram. He is currently working as a professor at School of Pureand Applied Physics at Mahatma Gandhi Universi",
