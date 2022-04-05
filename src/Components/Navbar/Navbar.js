@@ -4,10 +4,11 @@ import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import ham from "../../Assets/ham.svg";
 import cross from "../../Assets/cross.png";
+import {Link as ReactLink} from "react-router-dom";
 
 
 const Navbar = ({ scroll }) => {
-  const navItems = ["Home", "About", "Events", "Milestone", "Team", "Speakers", "Gallery", "SSS"];
+  const navItems = ["Home", "About", "Events", "Milestone", "Team", "Speakers", "Gallery"];
 
   const [state, setState] = useState(true);
   const [click, setClick] = useState(false);
@@ -44,6 +45,7 @@ const Navbar = ({ scroll }) => {
                   {<Link className={(scroll === (index)) ? "nav-link scrollto active" : "nav-link scrollto"} to={item.toLowerCase()}>{item}</Link>}
                 </li>
               ))}
+              <li><ReactLink className="nav-link scrollto" to="/sss">SSS</ReactLink></li>
             </ul>
 
             <img src={ham} onClick={() => setClick(!click)} className="ham" alt="" />
