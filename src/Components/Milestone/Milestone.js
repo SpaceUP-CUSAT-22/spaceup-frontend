@@ -1,6 +1,8 @@
 import "./Milestone.css";
 import Star from "../Stars/Star";
 import Heading from "../Elements/Heading";
+import drone from "../../Assets/milestones/drone.jpg";
+import cansat from "../../Assets/milestones/cansat.jpg";
 
 const content = [
     {
@@ -10,12 +12,12 @@ const content = [
     },
 
     {
-        image: "https://picsum.photos/id/237/200/300",
+        image: drone,
         title: "DRONE MAKING WORKSHOP",
         desc: "The Drone Making Workshop had a goal for participants to learn the basics of drone making with  the limited resources provided, to build and fly their drone with more confidence in a safe way. With experts there to help them learn and create."
     },
     {
-        image: "https://picsum.photos/id/237/200/300",
+        image: cansat,
         title: "CANSAT WORKSHOP",
         desc: "The workshop aimed at designing and providing the knowledge of space science, satellites, electronics, and embedded system from basic to advance levels. Basic learning was provided to the participants on the making of miniature satellites."
     }

@@ -42,6 +42,7 @@
 .mile-card-img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   transform-origin: 50% 65%;
   transition: transform 1s, filter 3s ease-in-out;
   filter: brightness(80%);

@@ -1,13 +1,13 @@
-import Main from "./Main.js";
+import Main from "./Main";
 import bgimage from "./Assets/earth.png";
 import shoot from "./Assets/shoot.png";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Login from "./Components/Login/login";
-import Signup from "./Components/Login/signup";
-import Reg from "./Components/Registration/reg"
-import Fullteam from "./Components/Team/Fullteam.js";
+// import Login from "./Components/Login/login";
+// import Signup from "./Components/Login/signup";
+// import Reg from "./Components/Registration/reg"
+// import Fullteam from "./Components/Team/Fullteam.js";
 import SHome from "./Components/SSS/home";
 import SEvent from "./Components/SSS/event";
 import SAbout from "./Components/SSS/about";
@@ -95,7 +95,7 @@ function App() {
       <Switch>
         <Route path="/sss" component={SSS} />
         <Background>
-          <Route path="/" component={Video} />
+          <Route path="/" component={Main} />
           {/* <Route path="/login" component={Login} />
           <Route path="/signup" component={Signup} />
           <Route path="/reg" component={Reg} />
