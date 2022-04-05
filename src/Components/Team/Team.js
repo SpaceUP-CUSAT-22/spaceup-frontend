@@ -2,7 +2,7 @@ import React from "react";
 import "./Team.css";
 import Button from "../Elements/Button";
 import Heading from "../Elements/Heading";
-
+import Slide from "react-reveal/Slide"
 const teamData = [
   {
     id: 1,
@@ -23,8 +23,10 @@ export default function Team() {
     <section id="team" className="mb-10">
       <div className="container">
         <Heading text={'TEAM'} />
+
         <div className="steps">
           {teamData.map((team) => (
+          <Slide left>
           <div className="steps-container">
             <div className="img-card">
               <img src={team.imgsrc} alt="" />
@@ -34,7 +36,9 @@ export default function Team() {
               <div className="line"></div>
               <h2>{team.position}</h2>
             </div>
+            
           </div>
+          </Slide>
           ))}
         </div>
         {/* <div className="btn-container">

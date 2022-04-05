@@ -2,6 +2,7 @@ import "./About.css";
 import pic from "../../Assets/about-bg.jpg";
 import Heading from "../Elements/Heading";
 import Stars from '../Stars/Star'
+import Slide from "react-reveal/Slide"
 
 const About = () => {
   return (
@@ -11,12 +12,17 @@ const About = () => {
         <div className="container">
           <div className="col-lg-12">
             <Heading text={"ABOUT US"} />
+            <Slide up>
             <p>{para[0]}</p>
+            </Slide>
           </div>
           <div className="row">
             <div className="col-lg-6">
+
               <Heading text={"OUR MISSON"} />
+              <Slide up>
               <p>{para[1]}</p>
+              </Slide>
             </div>
             <div className="pic col-lg-6">
               <img src={pic} alt="" />

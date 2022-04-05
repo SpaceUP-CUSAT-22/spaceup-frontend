@@ -4,7 +4,7 @@ import Heading from "../Elements/Heading";
 import drone from "../../Assets/milestones/drone.jpg";
 import cansat from "../../Assets/milestones/cansat.jpg";
 import sup20 from "../../Assets/milestones/spaceup2020.png";
-
+import Slide from "react-reveal/Slide"
 const content = [
     {
         image: sup20,
@@ -31,13 +31,17 @@ const Milestone = () => {
                 <Star />
                 <div className="container">
                     <Heading text={"MILESTONES"} />
+                   
                     <div className="milestone-body">
                         {
                             content.map((item) => (
+                              
                                 <Card image={item.image} title={item.title} desc={item.desc} />
-                            ))
+                                
+                                ))
                         }
                     </div>
+                   
                 </div>
             </section>
         </>
