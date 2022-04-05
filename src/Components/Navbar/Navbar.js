@@ -41,7 +41,7 @@ const Navbar = ({ scroll }) => {
             <ul>
               {navItems.map((item, index) => (
                 <li className="dropdown">
-                  {console.log(<Link className={(scroll === (index)) ? "nav-link scrollto active" : "nav-link scrollto"} to={item.toLowerCase().slice(1,)}>{item}</Link>)}
+                  {<Link className={(scroll === (index)) ? "nav-link scrollto active" : "nav-link scrollto"} to={item.toLowerCase()}>{item}</Link>}
                 </li>
               ))}
             </ul>
