@@ -27,7 +27,7 @@ const content = [
 const Milestone = () => {
     return (
         <>
-            <section id="milestone">
+            <section id="milestone" className="texture-bg">
                 <Star />
                 <div className="container">
                     <Heading text={"MILESTONES"} />

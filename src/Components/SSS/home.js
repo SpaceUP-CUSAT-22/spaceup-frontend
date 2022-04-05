@@ -41,10 +41,6 @@ export default function Home() {
             <Fade bottom duration={1000} delay={1000}>
                 <p className="text-gray-400 text-sm">For bulk booking for school students, Contact : <a className="no-underline text-gray-300 hover:text-gray-400" href="tel:+919447476081">94474 76081</a></p>
             </Fade>
-            <Pulse forever={false}>
-                <a className="home-register-btn" href="/sss">Register Closed</a>
-        
-            </Pulse>
         </div>
 
         {showModal&&<div className="flex flex-col items-center justify-center  w-screen h-screen bg-black/70 bg-blur-2xl fixed top-0 left-0 bottom-20 z-50">

@@ -12,9 +12,9 @@ const Home = () => {
                     <h1 className="linear-wipe">
                         SPACE-UP CUSAT 2022
                     </h1>
-                    <p>Pre-event on 3rd April 2022, Venue Seminar complex</p>
+                    <p>9 April 2022 to 10 April 2022, at Seminar Complex, CUSAT</p>
                     <Pulse forever={true}>
-                        <Button name="Register Now" route="/login" />
+                        <Button name="Register Now" route="https://rzp.io/l/spaceupcusat22" />
                     </Pulse>
                 </div>
             </section>

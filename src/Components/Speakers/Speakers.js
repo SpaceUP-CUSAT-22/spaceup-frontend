@@ -40,7 +40,7 @@ export default function Speakers() {
   };
 
   return (
-    <section id="speakers">
+    <section id="speakers" className="texture-bg">
       <Star />
       <div className="container">
         <Heading text={"SPEAKERS"} />
