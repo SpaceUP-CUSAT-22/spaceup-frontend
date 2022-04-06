@@ -10,13 +10,13 @@ const Home = () => {
         <>
             <section id="home">
                 <div className="home-container">
-                <Fade up duration={1000} >
-                    <h1 className="linear-wipe">
-                        SPACE-UP CUSAT 2022
-                    </h1>
+                    <Fade duration={1000} >
+                        <h1 className="">
+                            SPACEUP CUSAT 2022
+                        </h1>
                     </Fade>
                     <Fade up duration={1000} delay={1000}>
-                    <p className="font-bold text-white">9 April 2022 to 10 April 2022, at Seminar Complex, CUSAT</p>
+                        <p className="font-bold text-white">9 April 2022 to 10 April 2022, at Seminar Complex, CUSAT</p>
                     </Fade>
                     <Pulse forever={true}>
                         <Button name="Register Now" route="https://rzp.io/l/spaceupcusat22" />

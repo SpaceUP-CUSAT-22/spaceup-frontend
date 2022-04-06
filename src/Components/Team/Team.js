@@ -1,6 +1,5 @@
 import React from "react";
 import "./Team.css";
-import Button from "../Elements/Button";
 import Heading from "../Elements/Heading";
 import Slide from "react-reveal/Slide"
 const teamData = [

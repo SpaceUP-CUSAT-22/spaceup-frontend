@@ -71,9 +71,9 @@
 
 .img-card {
   margin: 0 auto;
-  width: 50%;
-  height: 20rem;
   position: relative;
+  height: 15rem;
+  width: 18rem;
   top: -1rem;
   clip-path: polygon(40% 0, 100% 0, 100% 80%, 60% 100%, 0 100%, 0% 60%, 0 20%);
 }
@@ -163,7 +163,7 @@
   }
   
   .img-card {
-    width:100%;
+    width: 15rem;
   }
 }
 

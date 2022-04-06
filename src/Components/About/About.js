@@ -13,7 +13,7 @@ const About = () => {
           <div className="col-lg-12">
             <Heading text={"ABOUT US"} />
             <Slide up>
-            <p>{para[0]}</p>
+            <p className="text-justify md:text-left">{para[0]}</p>
             </Slide>
           </div>
           <div className="row">
@@ -21,7 +21,7 @@ const About = () => {
 
               <Heading text={"OUR MISSON"} />
               <Slide up>
-              <p>{para[1]}</p>
+              <p className="text-justify md:text-left">{para[1]}</p>
               </Slide>
             </div>
             <div className="pic col-lg-6">
