@@ -1,0 +1,24 @@
+.program {
+  padding: 6rem 0 4rem;
+  color: whitesmoke;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+
+.program .content {
+  padding: 50px 30px 10px;
+  backdrop-filter: blur(2px);
+  border: 1px white;
+  clip-path: polygon(10% 0, 100% 0, 100% 80%, 90% 100%, 0 100%, 0% 60%, 0 20%);
+}
+
+.program p {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.sub-programs {
+  clip-path: polygon(5% 0, 100% 0, 100% 90%, 95% 100%, 0 100%, 0% 60%, 0 10%) !important;
+}

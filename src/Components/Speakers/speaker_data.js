@@ -1,4 +1,5 @@
 import nandankumar from "../../Assets/speakers/nandankumar.jpeg";
+import arjun from "../../Assets/speakers/arjun.png";
 
 const data = [
     {
@@ -56,6 +57,13 @@ const data = [
         name: "Raghav Sharma",
         position: "Founder, Xovian Aerospace Company",
         body: "Raghav is an Entrepreneur & Space Explorer working on a project on rockets and short range missiles new and alternative propulsion system. He is an engineering graduate from National Institute of Technology- NIT, Jalandhar. He is keen in rocketry science and has published him in the International Federation for Automation Control in partnership with Elsevier",
+    },
+    {
+        id: 9,
+        imgsrc: arjun,
+        name: "Cosmos Arjun",
+        position: "Space Entusiast, YouTuber",
+        body: 'Arjun Sooraj.  He is studying in grade 7 at Lecole Chempaka School, Srikariyam, Thiruvananthapuram.  His hobbies include taking classes in astrophysics, astro photography, astronomy and making YouTube videos on astronomy..  He has his own YouTube channel named  "Cosmos Arjun" to talk about astronomy and astrophysics topics.  He has done videos and public speeches on astronomy and astrophysics at more than 100 public events. He has received prizes for astro photography also.  He has participated in more than 150  astronomy workshops within the state. He has a home observatory consisting of two telescopes. His aim is to become an astrophysicist.',
     },
 ];
 

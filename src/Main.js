@@ -1,7 +1,8 @@
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
-import Team from "./Components/Team/Team";
+// import Team from "./Components/Team/Team";
+import Programs from "./Components/Programs/Program";
 import Event from "./Components/Events/Events";
 import Gallery from "./Components/Gallery/Gallery";
 import {Milestone} from "./Components/Milestone/Milestone";
@@ -39,7 +40,8 @@ const Main = () => {
             <About />
             <Event /> 
             <Milestone />
-            <Team />
+            {/* <Team /> */}
+            <Programs />
             <Speakers />
             <Gallery />
             <Footer />
