@@ -19,7 +19,8 @@ const Home = () => {
                         <p className="font-bold text-white">9 April 2022 to 10 April 2022, at Seminar Complex, CUSAT</p>
                     </Fade>
                     <Pulse forever={true}>
-                        <Button name="Register Now" route="https://rzp.io/l/spaceupcusat22" />
+                        <Button name="Register Now" cl="trans" route="https://rzp.io/l/spaceupcusat22" />
+                        <Button name="Register (For SEDS Members)" cl="" route="https://rzp.io/l/sedsspaceupcusat" />
                     </Pulse>
                 </div>
             </section>
